@@ -1,0 +1,109 @@
+/** Custom Fonts **/
+@font-face {
+  font-family: "Austin News Deck";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./assets/fonts/AustinNewsDeck-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Atlas Grotesk";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./assets/fonts/AtlasGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Austin News Deck";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./assets/fonts/AustinNewsDeck-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Atlas Grotesk";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./assets/fonts/AtlasGrotesk-LightItalic.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Austin News Deck", fallbackFont, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1;
+  line-height: 1.1;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100vh;
+  width: 100vw;
+  background-color: #333;
+  padding: 2em;
+  color: white;
+}
+
+.navColumn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.subNav {
+  margin-top: 10px;
+  padding-left: 15px; /* Indent the subNav a bit */
+}
+
+.labNav {
+  margin-top: 5px;
+  padding-left: 15px; /* Indent the labNav even more */
+}
+
+.nav.collapsed {
+  height: 6vh;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 2em;
+}
+
+.collapsedNavTextMenu {
+}
+
+.collapsedNavTextRoute {
+  position: relative;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.displayActiveRoute {
+  color: white;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+}
