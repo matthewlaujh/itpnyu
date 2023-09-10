@@ -9,6 +9,8 @@ import { Quotes } from "../../../components/Quotes";
 import { Images } from "../../../components/Images";
 import { CodeSnippets } from "../../../components/CodeSnippets";
 import { Iframe } from "../../../components/Iframes";
+import { AudioPlayer } from "../../../components/AudioPlayer";
+import { VideoPlayer } from "../../../components/VideoPlayer";
 
 const LabOne = () => {
   return (

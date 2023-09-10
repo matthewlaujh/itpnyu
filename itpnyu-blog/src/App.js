@@ -19,7 +19,6 @@ import { Iframe } from "./components/Iframes";
 
 // General Navigation
 import Home from "./views/Home/Home";
-import About from "./views/About/About";
 import { NavProvider, useNav } from "./context/NavContext";
 
 // Fall 2023
@@ -102,19 +101,24 @@ function AppContent() {
               <p>—</p>
               <div className="about">
                 <p>
+                  <a href="mailto:matthewlau@nyu.edu">
+                    Contact me at matthewlau@nyu.edu.
+                  </a>
+                  <br></br>
+                  <br></br>
                   Documenting work completed as part of the MPS Interactive
                   Telecommunications Program at NYU.
                   <br></br>
                   <br></br>This blog is designed and built from scratch using
                   React, as a way for me to learn React and push my front-end
                   capabilities. This blog is being co created with Generative AI
-                  assistance (ChatGPT + GitHub Copilot) and will be consistenly
+                  assistance (ChatGPT + GitHub Copilot) and will be consistently
                   updated throughout the semester.
                   <br></br>
                   <br></br>The text is output in typeface Austin News Deck by
                   Commercial Type (Paul Barnes), New York City.
                   <br></br>
-                  <br></br>© 2023 Lau Jun Hui Matthew or each source as noted.
+                  <br></br>© 2023 Lau Jun Hui Matthew or source as noted.
                 </p>
               </div>
             </ul>
@@ -196,7 +200,6 @@ function AppContent() {
       <Routes>
         {/* General Navigation */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
 
         {/* Fall 2023 */}
         <Route path="/fall-2023" element={<Fall2023 />} />
