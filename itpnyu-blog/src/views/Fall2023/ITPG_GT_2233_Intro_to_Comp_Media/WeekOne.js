@@ -28,7 +28,7 @@ const WeekOne = () => {
           What pitfalls did you run into? What could you not figure out how to
           do? How was the experience of using the web editor?
         </ExternalText>
-        <Text>To be completed.</Text>
+        <Text>Has not been completed.</Text>
         <Subheader text="Worksheet Questions" />
         <Text text="Answers to questions from Week One's Worksheet" />
         <ExternalText>
