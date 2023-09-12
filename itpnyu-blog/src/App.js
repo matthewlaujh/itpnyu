@@ -14,8 +14,8 @@ import { NavProvider, useNav } from "./context/NavContext";
 // Fall 2023
 import Fall2023 from "./views/Fall2023/Fall2023";
 // Applications
-import ITPG_GT_2000_Applications from "./views/Fall2023/ITPG_GT_2000_Applications/ITPG_GT_2000_Applications";
-import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
+// import ITPG_GT_2000_Applications from "./views/Fall2023/ITPG_GT_2000_Applications/ITPG_GT_2000_Applications";
+// import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
 // Hypercinema
 import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/ITPG_GT_2004_CL_Hypercinema";
 import LabOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/LabOne";
@@ -25,9 +25,6 @@ import LabOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Med
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp";
 import LabOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne";
-// Intro to Fabrication
-import ITPG_GT_2637_Intro_to_Fabrication from "./views/Fall2023/ITPG_GT_2637_Intro_to_Fabrication/ITPG_GT_2637_Intro_to_Fabrication";
-import LabOne_ITPG_GT_2637 from "./views/Fall2023/ITPG_GT_2637_Intro_to_Fabrication/LabOne";
 
 function App() {
   return (
@@ -94,12 +91,16 @@ function AppContent() {
                 <p>
                   Blog is currently functional but I will take some time to work
                   out the design and aesthetics over the next few weeks. Please
-                  bear with it for now, Thank you!
+                  bear with it for now, I promise it'll look better with each
+                  week, Thank you!
                   <br></br>
                   <br></br>
-                  <a href="mailto:matthewlau@nyu.edu">
-                    Contact me at matthewlau@nyu.edu.
-                  </a>
+                  Portfolio:{" "}
+                  <a href="https://matthewlaujh.com">matthewlaujh.com</a>
+                  <br></br>
+                  <br></br>
+                  Contact me at{" "}
+                  <a href="mailto:matthewlau@nyu.edu">matthewlau@nyu.edu.</a>
                   <br></br>
                   <br></br>
                   Documenting work completed as part of the MPS Interactive
@@ -122,7 +123,7 @@ function AppContent() {
               <li>
                 <Link to="/fall-2023">Fall 2023</Link>
                 <ul className="subNav">
-                  <li>
+                  {/* <li>
                     <Link to="/fall-2023/itpg-gt-2000-applications">
                       ITPG-GT 2000: Applications
                     </Link>
@@ -134,7 +135,7 @@ function AppContent() {
                       </li>
                       <p>—</p>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema">
                       ITPG-GT 2004: CL Hypercinema
@@ -174,19 +175,6 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li>
-                  <li>
-                    <Link to="/fall-2023/itpg-gt-2637-intro-to-fabrication">
-                      ITPG-GT 2637: Intro to Fabrication
-                    </Link>
-                    <ul className="labNav">
-                      <li>
-                        <Link to="/fall-2023/itpg-gt-2637-intro-to-fabrication/lab-one">
-                          Lab One
-                        </Link>
-                      </li>
-                      <p>—</p>
-                    </ul>
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -199,14 +187,14 @@ function AppContent() {
 
         {/* Fall 2023 */}
         <Route path="/fall-2023" element={<Fall2023 />} />
-        <Route
+        {/* <Route
           path="/fall-2023/itpg-gt-2000-applications"
           element={<ITPG_GT_2000_Applications />}
         />
         <Route
           path="/fall-2023/itpg-gt-2000-applications/lab-one"
           element={<LabOne_ITPG_GT_2000 />}
-        />
+        /> */}
 
         <Route
           path="/fall-2023/itpg-gt-2004-cl-hypercinema"
@@ -233,15 +221,6 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-one"
           element={<LabOne_ITPG_GT_2301 />}
-        />
-
-        <Route
-          path="/fall-2023/itpg-gt-2637-intro-to-fabrication"
-          element={<ITPG_GT_2637_Intro_to_Fabrication />}
-        />
-        <Route
-          path="/fall-2023/itpg-gt-2637-intro-to-fabrication/lab-one"
-          element={<LabOne_ITPG_GT_2637 />}
         />
       </Routes>
     </div>
