@@ -37,9 +37,9 @@ const LabOne = () => {
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/deconstructedColours-5.jpg",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/deconstructedColours-1.jpg",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/theOortCloudAndBlueMountainSAW-4.jpg",
-            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/aSeriesOfExplorationsAndTechnicalChallenges-5",
-            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/helloImHere-1",
-            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/theLasalleShowFacultyOfDesignBaHonsGraduateExhibitionFrontage-1",
+            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/aSeriesOfExplorationsAndTechnicalChallenges-5.jpg",
+            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/helloImHere-1.jpg",
+            "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/theLasalleShowFacultyOfDesignBaHonsGraduateExhibitionFrontage-1.jpg",
           ]}
         />
         <Subheader text="Lab Exercises from the First Week" />
