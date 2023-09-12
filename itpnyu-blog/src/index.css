@@ -70,12 +70,12 @@
 
 .subNav {
   margin-top: 10px;
-  padding-left: 15px; /* Indent the subNav a bit */
+  padding-left: 15px;
 }
 
 .labNav {
   margin-top: 5px;
-  padding-left: 15px; /* Indent the labNav even more */
+  padding-left: 15px;
 }
 
 .nav.collapsed {

@@ -7,16 +7,6 @@ import {
   useLocation,
 } from "react-router-dom";
 
-// Components
-import { Header } from "./components/Header";
-import { Subheader } from "./components/Subheader";
-import { Text } from "./components/Text";
-import { ExternalText } from "./components/ExternalText";
-import { Quotes } from "./components/Quotes";
-import { Images } from "./components/Images";
-import { CodeSnippets } from "./components/CodeSnippets";
-import { Iframe } from "./components/Iframes";
-
 // General Navigation
 import Home from "./views/Home/Home";
 import { NavProvider, useNav } from "./context/NavContext";
@@ -31,7 +21,7 @@ import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hyperc
 import LabOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/LabOne";
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media";
-import LabOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/LabOne";
+import LabOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne";
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp";
 import LabOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne";
@@ -67,6 +57,7 @@ function AppContent() {
         "ITPG-GT 2301: Intro to Physical Comp",
       "itpg-gt-2637-intro-to-fabrication": "ITPG-GT 2637: Intro to Fabrication",
       "lab-one": "Lab One",
+      WeekOne: "Week One",
     };
 
     return parts.map((part) => displayNames[part] || part).join(" — ");
@@ -101,6 +92,11 @@ function AppContent() {
               <p>—</p>
               <div className="about">
                 <p>
+                  Blog is currently functional but I will take some time to work
+                  out the design and aesthetics over the next few weeks. Please
+                  bear with it for now, Thank you!
+                  <br></br>
+                  <br></br>
                   <a href="mailto:matthewlau@nyu.edu">
                     Contact me at matthewlau@nyu.edu.
                   </a>
@@ -158,8 +154,8 @@ function AppContent() {
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/lab-one">
-                          Lab One
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekOne">
+                          Week One
                         </Link>
                       </li>
                       <p>—</p>
@@ -226,7 +222,7 @@ function AppContent() {
           element={<ITPG_GT_2233_Intro_to_Comp_Media />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/lab-one"
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekOne"
           element={<LabOne_ITPG_GT_2233 />}
         />
 
