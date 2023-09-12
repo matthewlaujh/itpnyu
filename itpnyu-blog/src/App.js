@@ -89,10 +89,11 @@ function AppContent() {
               <p>—</p>
               <div className="about">
                 <p>
-                  Blog is currently functional but I will take some time to work
-                  out the design and aesthetics over the next few weeks. Please
-                  bear with it for now, I promise it'll look better with each
-                  week, Thank you!
+                  Blog is currently functional but I haven't had the opportunity
+                  to style the components yet. I will take some time to work out
+                  the design and aesthetics over the next few weeks. Please bear
+                  with it for now, I promise it'll look better with each week,
+                  Thank you!
                   <br></br>
                   <br></br>
                   Portfolio:{" "}

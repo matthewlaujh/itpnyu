@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: "Austin News Deck";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./assets/fonts/AustinNewsDeck-Bold.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Atlas Grotesk";
   font-weight: 300;
   font-style: normal;
