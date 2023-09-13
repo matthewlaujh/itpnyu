@@ -48,7 +48,9 @@ const WeekOne = () => {
           learnt what I needed to get what I wanted done. I've never had
           "formal" training so much of my basics and foundations are shaky at
           best and I thought going through the whole of ICM would be a good way
-          just to reinforce the fundamentals that I've picked up.
+          just to reinforce the fundamentals that I've picked up. I'm not too
+          good with using for p5.js for illustration but I've mainly used it for
+          interfacing with hardware and more generative work.
           <br></br>
           <br></br>
           Since undergrad I've been exploring the intersection of computation
