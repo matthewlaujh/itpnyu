@@ -18,7 +18,7 @@ function Links({ to, external = false, children }) {
 
   return (
     <Link to={to} className="custom-link">
-      {children}
+      {` ${children} `}
     </Link>
   );
 }

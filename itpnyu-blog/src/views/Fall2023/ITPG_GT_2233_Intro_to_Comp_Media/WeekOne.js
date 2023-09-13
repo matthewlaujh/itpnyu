@@ -28,7 +28,58 @@ const WeekOne = () => {
           What pitfalls did you run into? What could you not figure out how to
           do? How was the experience of using the web editor?
         </ExternalText>
-        <Text>Has not been completed.</Text>
+        <Text>
+          Coming from a design communications background from diploma, I went
+          back and did it again for my undergrad but something always didn't
+          feel quite right or something was lacking, until one of my
+          supervisors, Andreas Schlegel (He has also contributed libraries for
+          processing and p5.js) in school at LASALLE, showed me p5.js and
+          Processing. They were trying something new that year I went back
+          (2020), and luckily they did cause that just introduced a whole new
+          world computation in design that I was never quite aware of. They
+          introduced computation in design and actually asides from the course
+          material they developed, they also recommended The Coding Train.
+          <br></br>
+          <br></br>
+          From then on I always searched "Computation Concept" + The Coding
+          Train on youtube, even before google or stackoverflow. I learnt a lot
+          from Andreas and also The Coding Train, but I've always absorbed the
+          information in bits and pieces, in kind of a "hacky" way. Where I only
+          learnt what I needed to get what I wanted done. I've never had
+          "formal" training so much of my basics and foundations are shaky at
+          best and I thought going through the whole of ICM would be a good way
+          just to reinforce the fundamentals that I've picked up.
+          <br></br>
+          <br></br>
+          Since undergrad I've been exploring the intersection of computation
+          and design and well my tools shifted, I started using p5.js and
+          Processing (as well as Arduino) for most of my work through undergrad
+          and even when I was working for a bit doing Creative Technology in
+          Advertising and Consulting. I didn't quite want to use traditional
+          design tools anymore. I really love looking at computational tools and
+          I still love design, so I think I would love to be able to build some
+          fun and functional tools for designing. Some tools and work that I
+          really like are
+          <Links to="https://www.schultzschultz.com/tools.html">
+            Schultz Schultz's typography tools
+          </Links>
+          ,<Links to="https://cotton.design/launch/">Talia Cotton's Work</Links>
+          ,
+          <Links to="https://www.eliashanzer.com/phase/">
+            Elias Hanzer's Phase
+          </Links>
+          and
+          <Links to="https://spacetypegenerator.com/">
+            Space Type Generator
+          </Links>
+          . Or even for augmenting and changing design processes
+          <Links to="https://www.itsnicethat.com/news/wieden-and-kennedy-formula-1-custom-software-digital-151220">
+            F1 Custom Design Software by Wieden and Kennedy
+          </Links>
+          Computation in design just opens so many new and fun opportunities to
+          approach design. So I would like to focus on making tools or some kind
+          of augment to a design process in ICM this semester.
+        </Text>
         <Subheader text="Worksheet Questions" />
         <Text text="Answers to questions from Week One's Worksheet" />
         <ExternalText>
