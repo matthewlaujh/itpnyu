@@ -40,7 +40,7 @@ const LabOne = () => {
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/aSeriesOfExplorationsAndTechnicalChallenges-5.jpg",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/helloImHere-1.jpg",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/theLasalleShowFacultyOfDesignBaHonsGraduateExhibitionFrontage-1.jpg",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Lab Exercises from the First Week" />
         <Text>
@@ -80,7 +80,7 @@ const LabOne = () => {
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_1.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_2.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Lab: Electronics" />
         <Subheader text="A Switched LED Circuit" />
@@ -88,21 +88,21 @@ const LabOne = () => {
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_3.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_4.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Components in Series" />
         <ImagesCarousel
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_5.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_6.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Components in Parallel/Measuring Amperage" />
         <ImagesCarousel
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_7.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_8.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Generating a Variable Voltage with a Potentiometer" />
         <ImagesCarousel
@@ -110,7 +110,7 @@ const LabOne = () => {
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_9.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_10.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_11.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Lab: Switches and Pushbuttons" />
         <Subheader text="Project 1: Three switches in parallel" />
@@ -120,28 +120,28 @@ const LabOne = () => {
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_13.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_14.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_15.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Project 2: Three switches in series" />
         <ImagesCarousel
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_16.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_17.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Project 3: Switching a DC motor" />
         <ImagesCarousel
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_18.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_19.JPG",
-          ]}
+          ]} orientation="landscape"
         />
         <Subheader text="Project 3: Switching a DC motor and an LED" />
         <ImagesCarousel
           images={[
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_20.JPG",
             "/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_One_21.JPG",
-          ]}
+          ]} orientation="landscape"
         />
       </div>
     </Container>

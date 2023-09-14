@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./components.css";
 
-function ImagesCarousel({ images }) {
+function ImagesCarousel({ images, orientation = "landscape" }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const previousSlide = () => {
@@ -18,8 +18,10 @@ function ImagesCarousel({ images }) {
     setCurrentImageIndex(index);
   };
 
+  const carouselClass = `carousel ${orientation}`; // This will add either "portrait" or "landscape" as an additional class
+
   return (
-    <div className="carousel">
+    <div className={carouselClass}>
       <button onClick={previousSlide} className="left-arrow">
         ◀
       </button>

@@ -1,8 +1,9 @@
 import React from "react";
+import "./components.css";
 
-function VideoPlayer({ src, alt, width = 320, height = 240 }) {
+function VideoPlayer({ src, alt }) {
   return (
-    <video width={width} height={height} controls>
+    <video className="video-player" controls>
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
