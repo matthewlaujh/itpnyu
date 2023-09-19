@@ -18,8 +18,18 @@ const LabTwo = () => {
     <Container>
       <div>
         <Header text="Week Two" />
-        {/* <Subheader text="Readings" />
-        <Text></Text> */}
+        <Subheader text="Readings" />
+        <Text>
+          The readings helped me better understand data types. I never quite
+          paid much attention to data types usually just following what the
+          tutorial suggested or just randomly trying each data type until it
+          would hold the information that I wanted it to hold. But now I have a
+          slightly better understanding of how to use each variable and the
+          difference between storing small variables and large ones and why it
+          matters to use the right data type. I'm still trying to understand
+          binary and the notation systems but this was a good reading that I
+          would definitely refer back to in the future.
+        </Text>
         <Subheader text="Lab Exercises from the Second Week" />
         <Text>
           This week's exercise got me back into the groove of some light Arduino
@@ -132,12 +142,15 @@ const LabTwo = () => {
       </div>
       <Subheader text="Bonus content — Pcomp x Hypercinema crossover" />
       <Text>
-        The labs wasn't the only time I worked on Physical Computing this week — I also did up a quick prototype for an interactive piece for Hypercinema's first project creating a Sound Sculpture. But more on that on my Hypercinema Blog Post.
+        The labs wasn't the only time I worked on Physical Computing this week —
+        I also did up a quick prototype for an interactive piece for
+        Hypercinema's first project creating a Sound Sculpture. But more on that
+        on my Hypercinema Blog Post.
       </Text>
       <Images
-          src="/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabTwo/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_Two_13.JPG"
-          alt=" "
-        />
+        src="/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabTwo/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_Two_13.JPG"
+        alt=" "
+      />
     </Container>
   );
 };
