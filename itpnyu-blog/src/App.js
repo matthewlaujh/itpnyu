@@ -25,6 +25,7 @@ import LabOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Med
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp";
 import LabOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne";
+import LabTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabTwo";
 
 function App() {
   return (
@@ -173,6 +174,11 @@ function AppContent() {
                           Lab One
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-two">
+                          Lab Two
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -222,6 +228,10 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-one"
           element={<LabOne_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-two"
+          element={<LabTwo_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
