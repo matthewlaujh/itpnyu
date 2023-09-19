@@ -130,6 +130,14 @@ const LabTwo = () => {
           alt="Description of video"
         />
       </div>
+      <Subheader text="Bonus content — Pcomp x Hypercinema crossover" />
+      <Text>
+        The labs wasn't the only time I worked on Physical Computing this week — I also did up a quick prototype for an interactive piece for Hypercinema's first project creating a Sound Sculpture. But more on that on my Hypercinema Blog Post.
+      </Text>
+      <Images
+          src="/assets/images/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabTwo/ITPG_GT_2301_Intro_to_Physical_Comp_Lab_Two_13.JPG"
+          alt=" "
+        />
     </Container>
   );
 };
