@@ -21,7 +21,8 @@ import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hyperc
 import LabOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/LabOne";
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media";
-import LabOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne";
+import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne";
+import WeekTwo_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwo";
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp";
 import LabOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne";
@@ -56,6 +57,7 @@ function AppContent() {
       "itpg-gt-2637-intro-to-fabrication": "ITPG-GT 2637: Intro to Fabrication",
       "lab-one": "Lab One",
       WeekOne: "Week One",
+      WeekTwo: "Week Two",
     };
 
     return parts.map((part) => displayNames[part] || part).join(" — ");
@@ -145,7 +147,7 @@ function AppContent() {
                     <ul className="labNav">
                       <li>
                         <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/lab-one">
-                          Lab One
+                          Week One
                         </Link>
                       </li>
                       <p>—</p>
@@ -161,6 +163,11 @@ function AppContent() {
                           Week One
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwo">
+                          Week Two
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -171,12 +178,12 @@ function AppContent() {
                     <ul className="labNav">
                       <li>
                         <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-one">
-                          Lab One
+                          Week One
                         </Link>
                       </li>
                       <li>
                         <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-two">
-                          Lab Two
+                          Week Two
                         </Link>
                       </li>
                       <p>—</p>
@@ -218,9 +225,12 @@ function AppContent() {
         />
         <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekOne"
-          element={<LabOne_ITPG_GT_2233 />}
+          element={<WeekOne_ITPG_GT_2233 />}
         />
-
+        <Route
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwo"
+          element={<WeekTwo_ITPG_GT_2233 />}
+        />
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp"
           element={<ITPG_GT_2301_Intro_to_Physical_Comp />}
