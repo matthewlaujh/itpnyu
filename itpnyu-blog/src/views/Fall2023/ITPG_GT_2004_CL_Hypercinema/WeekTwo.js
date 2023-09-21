@@ -136,13 +136,13 @@ const WeekTwo = () => {
         <Subheader text="Recorded Sounds" />
         <Subheader text="Dialogue Popcorn" />
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.m4a"
-          type="audio/m4a"
+          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.mp3"
+          type="audio/mp3"
         />
         <Subheader text="Popcorn Straw" />
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.m4a"
-          type="audio/m4a"
+          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.mp3"
+          type="audio/mp3"
         />
 
         <Subheader text="Documentation" />
