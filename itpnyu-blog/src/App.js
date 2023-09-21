@@ -18,7 +18,8 @@ import Fall2023 from "./views/Fall2023/Fall2023";
 // import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
 // Hypercinema
 import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/ITPG_GT_2004_CL_Hypercinema";
-import LabOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/LabOne";
+import WeekOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne";
+import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo";
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media";
 import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne";
@@ -146,8 +147,13 @@ function AppContent() {
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/lab-one">
+                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekOne">
                           Week One
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekTwo">
+                          Week Two
                         </Link>
                       </li>
                       <p>—</p>
@@ -215,10 +221,13 @@ function AppContent() {
           element={<ITPG_GT_2004_CL_Hypercinema />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/lab-one"
-          element={<LabOne_ITPG_GT_2004 />}
+          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekOne"
+          element={<WeekOne_ITPG_GT_2004 />}
         />
-
+        <Route
+          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekTwo"
+          element={<WeekTwo_ITPG_GT_2004 />}
+        />
         <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media"
           element={<ITPG_GT_2233_Intro_to_Comp_Media />}

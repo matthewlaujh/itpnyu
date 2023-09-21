@@ -13,7 +13,7 @@ import Links from "../../../components/Links";
 import P5Sketch from "../../../components/P5Sketch";
 import ImagesCarousel from "../../../components/ImagesCarousel";
 
-const LabOne = () => {
+const WeekOne = () => {
   return (
     <Container>
       <div>
@@ -147,4 +147,4 @@ const LabOne = () => {
     </Container>
   );
 };
-export default LabOne;
+export default WeekOne;
