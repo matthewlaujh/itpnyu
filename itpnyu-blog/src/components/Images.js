@@ -1,6 +1,12 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
-export function Images({ src, alt }) {
-  return <img src={src} alt={alt} className="image" />;
+function Images({ src, alt }) {
+  return (
+    <div className="componentContainer">
+      <img src={src} alt={alt} className="image" />
+    </div>
+  )
 }
+
+export default Images

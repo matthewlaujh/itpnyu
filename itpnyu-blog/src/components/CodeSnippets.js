@@ -5,13 +5,15 @@ import "./components.css";
 
 function CodeSnippets({ language, code }) {
   return (
-    <SyntaxHighlighter
-      language={language}
-      style={atomDark}
-      className="code-snippet"
-    >
-      {code}
-    </SyntaxHighlighter>
+    <div className="componentContainer">
+      <SyntaxHighlighter
+        language={language}
+        style={atomDark}
+        className="code-snippet"
+      >
+        {code}
+      </SyntaxHighlighter>
+    </div>
   );
 }
 

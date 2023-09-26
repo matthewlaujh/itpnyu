@@ -1,23 +1,23 @@
-// Components
-import { Container } from "../../../components/Container";
-import { Header } from "../../../components/Header";
-import { Subheader } from "../../../components/Subheader";
+import Container from "../../../components/Container";
+import Header from "../../../components/Header";
+import Subheader from "../../../components/Subheader";
 import Text from "../../../components/Text";
 import ExternalText from "../../../components/ExternalText";
-import { Quotes } from "../../../components/Quotes";
-import { Images } from "../../../components/Images";
+import Quotes from "../../../components/Quotes";
+import Images from "../../../components/Images";
 import CodeSnippets from "../../../components/CodeSnippets";
-import { Iframes } from "../../../components/Iframes";
-import { AudioPlayer } from "../../../components/AudioPlayer";
-import { VideoPlayer } from "../../../components/VideoPlayer";
+import Iframes from "../../../components/Iframes";
+import AudioPlayer from "../../../components/AudioPlayer";
+import VideoPlayer from "../../../components/VideoPlayer";
 import Links from "../../../components/Links";
 import P5Sketch from "../../../components/P5Sketch";
+import ImagesCarousel from "../../../components/ImagesCarousel";
 
 const WeekOne = () => {
   return (
     <Container>
       <div>
-        <Header text="Week One" />
+        <Header>Week One</Header>
         <ExternalText>
           Write a blog post about how you anticipate computation applying to
           your interests. This could be a subject you've studied, a job you've
@@ -82,8 +82,8 @@ const WeekOne = () => {
           approach design. So I would like to focus on making tools or some kind
           of augment to a design process in ICM this semester.
         </Text>
-        <Subheader text="Worksheet Questions" />
-        <Text text="Answers to questions from Week One's Worksheet" />
+        <Subheader>Worksheet Questions</Subheader>
+        <Text>Answers to questions from Week One's Worksheet</Text>
         <ExternalText>
           Question One —
           <Links to="https://editor.p5js.org/icm4.0/sketches/GxwuX757i">
@@ -147,7 +147,7 @@ function draw() {
           accurate as possible.
         </ExternalText>
         <Images
-          src="/assets/images/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/Week One/reference-image.png"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2233-introtocompmedia-images/itpg-gt-2233-introtocompmedia-weekOne-referenceImage.png"
           alt="Reference Image Provided."
         />
         <Text>
@@ -157,7 +157,7 @@ function draw() {
           colour codes.
         </Text>
         <Images
-          src="/assets/images/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/Week One/itpg-gt-2233-intro-to-comp-media—W1Q3.jpg"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2233-introtocompmedia-images/itpg-gt-2233-introtocompmedia-weekOne-w1q3.jpg"
           alt="Sketched Image."
         />
         <CodeSnippets

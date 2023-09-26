@@ -1,6 +1,12 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
-export function Subheader({ text }) {
-  return <h2 className="subheader">{text}</h2>;
+function Subheader({ children }) {
+  return (
+    <div className="componentContainer">
+      <h2 className="subheader">{children}</h2>
+    </div>
+  )
 }
+
+export default Subheader

@@ -1,6 +1,12 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
-export function Quotes({ text }) {
-  return <p className="quotes">{text}</p>;
+function Quotes({ children }) {
+  return (
+    <div className="componentContainer">
+      <p className="quotes">{children}</p>
+    </div>
+  )
 }
+
+export default Quotes

@@ -1,23 +1,23 @@
-// Components
-import { Container } from "../../../components/Container";
-import { Header } from "../../../components/Header";
-import { Subheader } from "../../../components/Subheader";
+import Container from "../../../components/Container";
+import Header from "../../../components/Header";
+import Subheader from "../../../components/Subheader";
 import Text from "../../../components/Text";
 import ExternalText from "../../../components/ExternalText";
-import { Quotes } from "../../../components/Quotes";
-import { Images } from "../../../components/Images";
+import Quotes from "../../../components/Quotes";
+import Images from "../../../components/Images";
 import CodeSnippets from "../../../components/CodeSnippets";
-import { Iframes } from "../../../components/Iframes";
-import { AudioPlayer } from "../../../components/AudioPlayer";
-import { VideoPlayer } from "../../../components/VideoPlayer";
+import Iframes from "../../../components/Iframes";
+import AudioPlayer from "../../../components/AudioPlayer";
+import VideoPlayer from "../../../components/VideoPlayer";
 import Links from "../../../components/Links";
 import P5Sketch from "../../../components/P5Sketch";
+import ImagesCarousel from "../../../components/ImagesCarousel";
 
 const WeekTwo = () => {
   return (
     <Container>
       <div>
-        <Header text="Week Two" />
+        <Header>Week Two</Header>
         <Text>
           This week's exercises were a good way for me to get back into
           animating the graphics drawn on p5.js. It was good to revisit things
@@ -32,8 +32,8 @@ const WeekTwo = () => {
           get better at knowing how to calculate when things "hit" or is near a
           border.
         </Text>
-        <Subheader text="Worksheet Questions" />
-        <Text text="Answers to questions from Week Two's Worksheet" />
+        <Subheader>Worksheet Questions</Subheader>
+        <Text>Answers to questions from Week Two's Worksheet</Text>
         <ExternalText>
           Question Two —
           <Links to="https://editor.p5js.org/icm4.0/sketches/lUwaSJS4V">

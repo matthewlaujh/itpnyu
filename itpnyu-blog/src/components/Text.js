@@ -1,12 +1,20 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
 function Text({ text, children }) {
   if (text) {
-    return <p className="text">{text}</p>;
+    return (
+      <div className="componentContainer">
+        <p className="text">{text}</p>
+      </div>
+    )
   }
 
-  return <p className="text">{children}</p>;
+  return (
+    <div className="componentContainer">
+      <p className="text">{children}</p>
+    </div>
+  )
 }
 
-export default Text;
+export default Text

@@ -1,13 +1,12 @@
-// Components
-import { Container } from "../../../components/Container";
-import { Header } from "../../../components/Header";
-import { Subheader } from "../../../components/Subheader";
+import Container from "../../../components/Container";
+import Header from "../../../components/Header";
+import Subheader from "../../../components/Subheader";
 import Text from "../../../components/Text";
 import ExternalText from "../../../components/ExternalText";
-import { Quotes } from "../../../components/Quotes";
-import { Images } from "../../../components/Images";
+import Quotes from "../../../components/Quotes";
+import Images from "../../../components/Images";
 import CodeSnippets from "../../../components/CodeSnippets";
-import { Iframes } from "../../../components/Iframes";
+import Iframes from "../../../components/Iframes";
 import AudioPlayer from "../../../components/AudioPlayer";
 import VideoPlayer from "../../../components/VideoPlayer";
 import Links from "../../../components/Links";
@@ -18,7 +17,7 @@ const WeekTwo = () => {
   return (
     <Container>
       <div>
-        <Header text="Week Two" />
+        <Header>Week Two</Header>
         <Text>
           I really appreciated the list of sound artist shared during class —
           amongst those I really liked and resonated with the works of Haroon
@@ -51,7 +50,7 @@ const WeekTwo = () => {
           it with smashed glass and other dangerous materials collected from the
           beach to create this sound of waves that you would hear there.
         </Text>
-        <Subheader text="" />
+        <Subheader>Sound Installation</Subheader>
         <ExternalText>
           Create a sound installation that uses physical objects or properties
           to mimic the mood or environment of a recorded sound (which you
@@ -133,75 +132,80 @@ const WeekTwo = () => {
           the faster the movie goes. I think that would be a fun way to make
           this "interface" more intuitive and less intrusive.
         </Text>
-        <Subheader text="Recorded Sounds" />
-        <Subheader text="Dialogue Popcorn" />
+        <Subheader>Recorded Sounds that we are trying to mimic.</Subheader>
+        <Subheader>Popcorn eating with dialogue in background.</Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-1.mp3"
           type="audio/mp3"
         />
-        <Subheader text="Popcorn Straw" />
+        <Subheader>Straw fidgeting with dialogue in background.</Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/audio-sculpture-1.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-2.mp3"
           type="audio/mp3"
         />
-
-        <Subheader text="Documentation" />
+        <Subheader>Documentation of making the Sound Installation</Subheader>
         <Subheader text="Video of single motor, single potentiometer" />
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-1.mov"
           alt="Description of video"
         />
-        <Subheader text="Video of dual motor, dual potentiometer" />
+        <Subheader>Video of dual motor, dual potentiometer</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-2.mov"
           alt="Description of video"
         />
-        <Subheader text="Video of dual motor, dual potentiometer to control the speed of the delay" />
+        <Subheader>
+          Video of dual motor, dual potentiometer to control the speed of the
+          delay
+        </Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-3.mov"
           alt="Description of video"
         />
-        <Subheader text="Testing the components in the box we made" />
+        <Subheader>Testing the components in the box we made</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-4.mov"
           alt="Description of video"
         />
-        <Subheader text="Testing the link to Touchdesigner" />
+        <Subheader>Testing the link to Touchdesigner</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-5.mov"
           alt="Description of video"
         />
-        <Subheader text="Testing the sculpture without interaction" />
+        <Subheader>Testing the sculpture without interaction</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-6.mov"
           alt="Description of video"
         />
-        <Subheader text="Controlling a narrative building but slow scene" />
+        <Subheader>Controlling a narrative building but slow scene</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-7.mov"
           alt="Description of video"
         />
-        <Subheader text="Controlling a action packed but narratively slow scene" />
+        <Subheader>
+          Controlling an action packed but narratively slow scene
+        </Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-8.mov"
           alt="Description of video"
         />
-        <Text>
-          Some images of my shoddy wiring and soldering, and sketchy at best
-          "mounting".
-        </Text>
+        <Subheader>Arduino Code and Touchdesigner nodes.</Subheader>
         <ImagesCarousel
           images={[
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-4.png",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-5.png",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-4.png",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-5.png",
           ]}
           orientation="landscape"
         />
+        <Subheader>
+          Some images of my shoddy wiring and soldering, and sketchy at best
+          "mounting".
+        </Subheader>
         <ImagesCarousel
           images={[
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-1.jpg",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-2.jpg",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-3.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-1.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-2.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekTwo-audioSculpture-3.jpg",
           ]}
           orientation="landscape"
         />

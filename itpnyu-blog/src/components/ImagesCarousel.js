@@ -21,25 +21,27 @@ function ImagesCarousel({ images, orientation = "landscape" }) {
   const carouselClass = `carousel ${orientation}`; // This will add either "portrait" or "landscape" as an additional class
 
   return (
-    <div className={carouselClass}>
-      <button onClick={previousSlide} className="left-arrow">
-        ◀
-      </button>
-      <img src={images[currentImageIndex]} alt="" />
-      <button onClick={nextSlide} className="right-arrow">
-        ▶
-      </button>
+    <div className="componentContainer">
+      <div className={carouselClass}>
+        <button onClick={previousSlide} className="left-arrow">
+          ◀
+        </button>
+        <img src={images[currentImageIndex]} alt="" />
+        <button onClick={nextSlide} className="right-arrow">
+          ▶
+        </button>
 
-      <div className="thumbnails">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt=""
-            onClick={() => setCurrentImageIndex(index)}
-            className={index === currentImageIndex ? "active-thumbnail" : ""}
-          />
-        ))}
+        <div className="thumbnails">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt=""
+              onClick={() => setCurrentImageIndex(index)}
+              className={index === currentImageIndex ? "active-thumbnail" : ""}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

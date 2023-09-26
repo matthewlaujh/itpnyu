@@ -1,33 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from "react"
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
   useLocation,
-} from "react-router-dom";
+} from "react-router-dom"
 
 // General Navigation
-import Home from "./views/Home/Home";
-import { NavProvider, useNav } from "./context/NavContext";
+import Home from "./views/Home/Home"
+import { NavProvider, useNav } from "./context/NavContext"
 
 // Fall 2023
-import Fall2023 from "./views/Fall2023/Fall2023";
+import Fall2023 from "./views/Fall2023/Fall2023"
 // Applications
 // import ITPG_GT_2000_Applications from "./views/Fall2023/ITPG_GT_2000_Applications/ITPG_GT_2000_Applications";
 // import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
 // Hypercinema
-import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/ITPG_GT_2004_CL_Hypercinema";
-import WeekOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne";
-import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo";
+import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/ITPG_GT_2004_CL_Hypercinema"
+import WeekOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne"
+import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo"
 // Intro to Comp Media
-import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media";
-import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne";
-import WeekTwo_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwo";
+import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media"
+import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne"
+import WeekTwo_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwo"
 //  Intro to Physical Comp
-import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp";
-import LabOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabOne";
-import LabTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/LabTwo";
+import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp"
+import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
+import WeekTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekTwo"
+import WeekThree_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekThree"
 
 function App() {
   return (
@@ -36,17 +37,17 @@ function App() {
         <AppContent />
       </NavProvider>
     </Router>
-  );
+  )
 }
 
 function AppContent() {
-  const { isNavCollapsed, setNavCollapsed } = useNav();
-  const location = useLocation();
+  const { isNavCollapsed, setNavCollapsed } = useNav()
+  const location = useLocation()
 
   const displayActiveRoute = () => {
-    const parts = location.pathname.split("/").filter(Boolean);
-    if (parts.length === 0) return "Home";
-    if (parts.length === 1 && parts[0] === "about") return "About";
+    const parts = location.pathname.split("/").filter(Boolean)
+    if (parts.length === 0) return "Home"
+    if (parts.length === 1 && parts[0] === "about") return "About"
 
     const displayNames = {
       "fall-2023": "Fall 2023",
@@ -56,21 +57,21 @@ function AppContent() {
       "itpg-gt-2301-intro-to-physical-comp":
         "ITPG-GT 2301: Intro to Physical Comp",
       "itpg-gt-2637-intro-to-fabrication": "ITPG-GT 2637: Intro to Fabrication",
-      "lab-one": "Lab One",
       WeekOne: "Week One",
       WeekTwo: "Week Two",
-    };
+      WeekThree: "Week Three",
+    }
 
-    return parts.map((part) => displayNames[part] || part).join(" — ");
-  };
+    return parts.map((part) => displayNames[part] || part).join(" — ")
+  }
 
   useEffect(() => {
     if (location.pathname !== "/") {
-      setNavCollapsed(true);
+      setNavCollapsed(true)
     } else {
-      setNavCollapsed(false);
+      setNavCollapsed(false)
     }
-  }, [location.pathname]);
+  }, [location.pathname])
 
   return (
     <div>
@@ -183,13 +184,18 @@ function AppContent() {
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-one">
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekOne">
                           Week One
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-two">
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekTwo">
                           Week Two
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekThree">
+                          Week Three
                         </Link>
                       </li>
                       <p>—</p>
@@ -245,16 +251,20 @@ function AppContent() {
           element={<ITPG_GT_2301_Intro_to_Physical_Comp />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-one"
-          element={<LabOne_ITPG_GT_2301 />}
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekOne"
+          element={<WeekOne_ITPG_GT_2301 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/lab-two"
-          element={<LabTwo_ITPG_GT_2301 />}
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekTwo"
+          element={<WeekTwo_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekThree"
+          element={<WeekThree_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

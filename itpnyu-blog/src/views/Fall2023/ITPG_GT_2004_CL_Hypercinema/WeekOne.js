@@ -1,24 +1,24 @@
-import { Container } from "../../../components/Container";
-import { Header } from "../../../components/Header";
-import { Subheader } from "../../../components/Subheader";
-import Text from "../../../components/Text";
-import ExternalText from "../../../components/ExternalText";
-import { Quotes } from "../../../components/Quotes";
-import { Images } from "../../../components/Images";
-import CodeSnippets from "../../../components/CodeSnippets";
-import { Iframes } from "../../../components/Iframes";
-import AudioPlayer from "../../../components/AudioPlayer";
-import VideoPlayer from "../../../components/VideoPlayer";
-import Links from "../../../components/Links";
-import P5Sketch from "../../../components/P5Sketch";
-import ImagesCarousel from "../../../components/ImagesCarousel";
+import Container from "../../../components/Container"
+import Header from "../../../components/Header"
+import Subheader from "../../../components/Subheader"
+import Text from "../../../components/Text"
+import ExternalText from "../../../components/ExternalText"
+import Quotes from "../../../components/Quotes"
+import Images from "../../../components/Images"
+import CodeSnippets from "../../../components/CodeSnippets"
+import Iframes from "../../../components/Iframes"
+import AudioPlayer from "../../../components/AudioPlayer"
+import VideoPlayer from "../../../components/VideoPlayer"
+import Links from "../../../components/Links"
+import P5Sketch from "../../../components/P5Sketch"
+import ImagesCarousel from "../../../components/ImagesCarousel"
 
 const WeekOne = () => {
   return (
     <Container>
       <div>
-        <Header text="Week One" />
-        <Subheader text="Sound Installation References" />
+        <Header>Week One</Header>
+        <Subheader>Sound Installation References</Subheader>
         <Text>
           Looking at the references shared in class — especially Janet Cardiff's
           work reminded me of the exhibition that I went to at the Marina Bay
@@ -67,20 +67,20 @@ const WeekOne = () => {
           to kind of relieve the experience of being there.
         </Text>
         <VideoPlayer
-          src="/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-0.MOV"
-          alt="Description of video"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekOne-soundInstallation.mov"
+          alt="Video of Rage fluids by Hannah Perry"
         />
         <ImagesCarousel
           images={[
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-1.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-2.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-3.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-4.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-5.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-6.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-7.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-8.JPG",
-            "/assets/images/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-9.JPG",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-1.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-2.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-3.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-4.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-5.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-6.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-7.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-8.jpg",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekOne-9.jpg",
           ]}
           orientation="portrait"
         />
@@ -98,53 +98,53 @@ const WeekOne = () => {
           what was quite fun. Trying to piece the sound to the description to
           what I remember recording.
         </Text>
-        <Subheader text="The Feeling of Loneliness" />
+        <Subheader>The Feeling of Loneliness</Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-1.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-1.mp3"
           type="audio/mp3"
         />
-        <Subheader text="The Feeling of Happiness" />
+        <Subheader>The Feeling of Happiness </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-2.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-2.mp3"
           type="audio/mp3"
         />
-        <Subheader text="The Sound of Betrayal" />
+        <Subheader>The Sound of Betrayal </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-3.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-3.mp3"
           type="audio/mp3"
         />
-        <Subheader text="The Sound of Cold" />
+        <Subheader>The Sound of Cold </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-4.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-4.mp3"
           type="audio/mp3"
         />
-        <Subheader text="A Hum" />
+        <Subheader>A Hum </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-5.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-5.mp3"
           type="audio/mp3"
         />
-        <Subheader text="A Metal Sound" />
+        <Subheader>A Metal Sound </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-6.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-6.mp3"
           type="audio/mp3"
         />
-        <Subheader text="A Ticking Sound" />
+        <Subheader>A Ticking Sound" </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-7.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-7.mp3"
           type="audio/mp3"
         />
-        <Subheader text="The Sound of Purple" />
+        <Subheader>The Sound of Purple </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-8.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-8.mp3"
           type="audio/mp3"
         />
-        <Subheader text="Squishiness" />
+        <Subheader>Squishiness </Subheader>
         <AudioPlayer
-          src="/assets/audio/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne/ITPG_GT_2004_CL_Hypercinema-WeekOne-3.mp3"
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-audio/itpg-gt-2004-cl-hypercinema-weekOne-soundRecordings-9.mp3"
           type="audio/mp3"
         />
       </div>
     </Container>
-  );
-};
-export default WeekOne;
+  )
+}
+export default WeekOne

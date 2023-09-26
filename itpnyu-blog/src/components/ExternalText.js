@@ -1,12 +1,20 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
 function ExternalText({ text, children }) {
   if (text) {
-    return <p className="external-text">{text}</p>;
+    return (
+      <div className="componentContainer">
+        <p className="external-text">{text}</p>
+      </div>
+    )
   }
 
-  return <p className="external-text">{children}</p>;
+  return (
+    <div className="componentContainer">
+      <p className="external-text">{children}</p>
+    </div>
+  )
 }
 
-export default ExternalText;
+export default ExternalText

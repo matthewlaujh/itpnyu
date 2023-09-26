@@ -1,6 +1,12 @@
-import React from "react";
-import "./components.css";
+import React from "react"
+import "./components.css"
 
-export function Header({ text }) {
-  return <h1 className="header">{text}</h1>;
+function Header({ children }) {
+  return (
+    <div className="componentContainer">
+      <h1 className="header">{children}</h1>
+    </div>
+  )
 }
+
+export default Header
