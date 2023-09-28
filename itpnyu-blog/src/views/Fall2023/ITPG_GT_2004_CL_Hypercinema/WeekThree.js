@@ -82,10 +82,14 @@ const WeekThree = () => {
           frames to understand the story. But Myrah pointed out that if you kept
           your eyes at one spot, clockwise looked reversed, so we also did a
           version that was counterclockwise and then you could see the animation
-          by staring at a single spot in the middle. Not sure if this makes
-          sense to anyone else but I thought it was an interesting by product of
-          what we've done and how the same thing could be experienced in
-          different ways.
+          by staring at a single spot in the middle. Interestingly too, Octavio
+          did a version where he added a triangle slice frame (like the ones we
+          used to plan out the animation) viewing through that created another
+          way to view it in a more traditional animation sense but something
+          about the odd framing gave it this old-timey cartoon feel to it. Not
+          sure if this makes sense to anyone else but I thought it was an
+          interesting by product of what we've done and how the same thing could
+          be experienced in different ways.
         </Text>
 
         <Subheader>Staring at one spot.</Subheader>
