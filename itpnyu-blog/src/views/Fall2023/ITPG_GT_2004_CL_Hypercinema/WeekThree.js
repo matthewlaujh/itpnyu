@@ -102,6 +102,15 @@ const WeekThree = () => {
           alt=""
         />
 
+        <Subheader>Slice view.</Subheader>
+        <ImagesCarousel
+          images={[
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekThree-gifSlice-1.gif",
+            "https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-images/itpg-gt-2004-cl-hypercinema-weekThree-gifSlice-2.gif",
+          ]}
+          orientation="landscape"
+        />
+
         <Subheader>
           Various Framerates, each one removing 1 frame from every 3 frames.
         </Subheader>
