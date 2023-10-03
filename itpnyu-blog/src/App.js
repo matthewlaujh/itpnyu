@@ -31,6 +31,7 @@ import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_I
 import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
 import WeekTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekTwo"
 import WeekThree_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekThree"
+import WeekFour_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFour"
 
 function App() {
   return (
@@ -210,6 +211,11 @@ function AppContent() {
                           Week Three
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFour">
+                          Week Four
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -281,6 +287,10 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekThree"
           element={<WeekThree_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFour"
+          element={<WeekFour_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
