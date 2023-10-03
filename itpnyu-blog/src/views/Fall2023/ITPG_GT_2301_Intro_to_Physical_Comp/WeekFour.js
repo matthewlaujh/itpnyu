@@ -24,7 +24,11 @@ const WeekFour = () => {
           <Links to="https://www.itp.jnackash.com/">Jasmine Nackash</Links> for
           this Mid-Term project. We met to come up with a concept and some ideas
           and landed on this spider web visual inspired ouija board-esque
-          interactive piece using stretch sensors and electromagnets.
+          interactive piece using stretch sensors and electromagnets. The idea
+          is that we would create this string movement instrument-ish object
+          that would control the sounds being played based on where the strings
+          moved to (using the electromagnets) and the sound frequency/volume
+          would be manipulated by the tension/resistance of the strings.
         </Text>
         <Images src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2301-introtophysicalcomp-images/itpg-gt2301-introtophysicalcomp-weekFour-ideationSketch.jpg" />
       </div>
