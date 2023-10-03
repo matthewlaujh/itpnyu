@@ -31,6 +31,13 @@ const WeekFour = () => {
           would be manipulated by the tension/resistance of the strings.
         </Text>
         <Images src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2301-introtophysicalcomp-images/itpg-gt2301-introtophysicalcomp-weekFour-ideationSketch.jpg" />
+        <Subheader>
+          Questions for class.
+        </Subheader>
+        <Text>
+          1) Can we make our own electromagnets?
+          2) Do electromagnets affect the resistance of the conductive string?
+        </Text>
       </div>
     </Container>
   )
