@@ -29,15 +29,16 @@ const WeekThree = () => {
         </Quotes>
         <Text>
           I. LOVE. LOOPS. This week reminded me of the first chapter of John
-          Maeda's How to Speak Machine (I actually brought the book to re-read
-          on my flight to New York while moving here, although I've read it like
-          2 and half times and some things still just go over my head, but
-          LOOPS, LOOPS are great). I think it's because like Maeda, I used to
-          believe in brute forcing things and just getting things done no matter
-          what and no matter how much work it takes. But learning loops has
-          taught me that well Machines are here to help, why bother trying to
-          brute force it when we could do things automatically. Which also
-          reminded me of what one of my early design lecturers said when
+          Maeda's How to Speak Machine (it was actually one of the two books I
+          brought to re-read on my flight to New York while moving here (the
+          other being Radical Technologies by Adam Greenfield), although I've
+          read it like 2 and half times and some things still just go over my
+          head, but LOOPS, LOOPS are great). I think it's because like Maeda, I
+          used to believe in brute forcing things and just getting things done
+          no matter what and no matter how much work it takes. But learning
+          loops has taught me that well Machines are here to help, why bother
+          trying to brute force it when we could do things automatically. Which
+          also reminded me of what one of my early design lecturers said when
           teaching us how to use design tools like Illustrator or Photoshop —
           "If you find yourself doing a repetitive task that is taking up more
           time than you expect it would, you're using the tool wrong", which I
