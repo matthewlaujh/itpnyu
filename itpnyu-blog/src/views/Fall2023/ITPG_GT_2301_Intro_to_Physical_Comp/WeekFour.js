@@ -31,12 +31,27 @@ const WeekFour = () => {
           would be manipulated by the tension/resistance of the strings.
         </Text>
         <Images src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2301-introtophysicalcomp-images/itpg-gt2301-introtophysicalcomp-weekFour-ideationSketch.jpg" />
-        <Subheader>
-          Questions for class.
-        </Subheader>
+        <Subheader>Technical Specifications.</Subheader>
         <Text>
-          1) Can we make our own electromagnets?
-          2) Do electromagnets affect the resistance of the conductive string?
+          A microcontroller — Probably an Arduino NANO 33 IOT or an Arduino UNO
+          <br></br>
+          Conductive Rubber Cord (two or three)<br></br>
+          Electro magnets. (8-12))<br></br>
+          Speakers (two or three)<br></br>
+          Wooden board (around 12" rectangular board we'll probably cut into a
+          circle).<br></br>
+          Nails and screws
+        </Text>
+        <Subheader>Questions for class.</Subheader>
+        <Text>
+          Do electromagnets offset the resistance of conductive string? If so,
+          how might we address that?<br></br>
+          Can we make our own electromagnets?<br></br>
+          Can we make our own speakers? Can we perhaps turn this whole thing
+          into a speaker?!<br></br>
+          Can we somehow paint the conductive strings?<br></br>
+          How unpredictable could electromagnets be? Do they have a range in
+          which they operate? Are they stable enough for our purpose?<br></br>
         </Text>
       </div>
     </Container>
