@@ -42,8 +42,8 @@
 }
 
 .image {
-  width: auto;
-  height: 80vh;
+  width: 100%;
+  height: auto;
 }
 
 .video-player {
