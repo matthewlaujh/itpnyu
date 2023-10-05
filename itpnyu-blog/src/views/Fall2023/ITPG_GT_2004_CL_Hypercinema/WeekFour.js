@@ -33,6 +33,18 @@ const WeekThree = () => {
           Like we can use conditionals and loops (well, they're just computing
           concepts, that are generally used everywhere), but would be excited to
           learn more and try it out more over the course of the next project.
+          <br></br>
+          <br></br>I actually wanted to make a sequence using the expression to
+          do a bouncing ball, but I couldn't quite figure it out for the moment.
+          But I want to wiggle the ball using wiggle() in position, have it
+          rotated and moving down using time, bounce and "squish" at the bottom
+          of the frame using random size for scale before coming back up.
+          Thought that would look abit like a comical bounce considering the
+          random size squish on contact. But I could not figure out how to
+          "keyframe" the expressions? Not sure how that works but I saw online
+          that they would create variables and use conditional statements to
+          sort of time the expressions? Let me try this again when I've got some
+          extra time to experiment.
         </Text>
 
         <Subheader>
