@@ -419,12 +419,82 @@ function draw() {
           chapter also uses concepts we haven't covered yet. And here is a
           recursion code example, and recursion video tutorial.
         </ExternalText>
+        <Text>W3-Conditional Rule Based Animation-Refactored</Text>
         <CodeSnippets
           language="javascript"
-          code={`
+          code={`// https://editor.p5js.org/matthewlaujh-itpnyu/sketches/9jKZBLE09
+// Adapted from https://thecodingtrain.com/challenges/14-fractal-trees-recursive
+
+let angle = 0.1;
+let depth = 0;
+let length;
+let split = false;
+let initiallength;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  initiallength = height;
+  length = initiallength;
+}
+
+function draw() {
+  drawProperties();
+  drawTree(length, depth);
+
+  if (split) {
+    incrementTreeDepth();
+  }
+}
+
+function drawProperties() {
+  background(0);
+  stroke(255);
+  strokeWeight(2);
+  translate(width * 0.5, height);
+}
+
+function drawTree(length, currentDepth) {
+  // Draw the main branch
+  line(0, 0, 0, -length);
+  translate(0, -length);
+  
+  if (currentDepth > 0) {
+    const reducedLength = length * 0.7;
+
+    drawRotatedSubBranch(reducedLength, currentDepth - 1, angle);
+
+    drawRotatedSubBranch(reducedLength, currentDepth - 1, -angle);
+  }
+}
+
+function drawRotatedSubBranch(length, currentDepth, rotationAngle) {
+  push();
+  rotate(rotationAngle);
+  drawTree(length, currentDepth);
+  pop();
+}
+
+
+function incrementTreeDepth() {
+  depth++;
+  split = false;
+}
+
+function mouseMoved() {
+  length = map(mouseY, height, 0, height / 10, height);
+  angle = map(mouseX, width, 0, width / 10, width);
+}
+
+function mousePressed() {
+  split = true;
+}
   `}
         />
-        <Iframes src="" title="p5.js sketch of " height="50vh" />
+        <Iframes
+          src="https://editor.p5js.org/matthewlaujh-itpnyu/full/9jKZBLE09"
+          title="p5.js sketch of https://editor.p5js.org/matthewlaujh-itpnyu/sketches/9jKZBLE09"
+          height="50vh"
+        />
       </div>
     </Container>
   )
