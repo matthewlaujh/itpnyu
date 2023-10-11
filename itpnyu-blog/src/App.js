@@ -28,6 +28,7 @@ import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Me
 import WeekTwo_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwo"
 import WeekThree_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekThree"
 import WeekFour_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekFour"
+import WeekFive_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekFive"
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp"
 import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
@@ -66,6 +67,7 @@ function AppContent() {
       WeekTwo: "Week Two",
       WeekThree: "Week Three",
       WeekFour: "Week Four",
+      WeekFive: "Week Five",
     }
 
     return parts.map((part) => displayNames[part] || part).join(" — ")
@@ -201,6 +203,11 @@ function AppContent() {
                           Week Four
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFive">
+                          Week Five
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -292,6 +299,10 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFour"
           element={<WeekFour_ITPG_GT_2233 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFive"
+          element={<WeekFive_ITPG_GT_2233 />}
         />
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp"
