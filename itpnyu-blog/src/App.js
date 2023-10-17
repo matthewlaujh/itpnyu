@@ -22,6 +22,7 @@ import WeekOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/W
 import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo"
 import WeekThree_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekThree"
 import WeekFour_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFour"
+import WeekFive_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFive"
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media"
 import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne"
@@ -35,6 +36,7 @@ import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physica
 import WeekTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekTwo"
 import WeekThree_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekThree"
 import WeekFour_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFour"
+import WeekFive_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFive"
 
 function App() {
   return (
@@ -175,6 +177,11 @@ function AppContent() {
                           Week Four
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFive">
+                          Week Five
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -236,6 +243,11 @@ function AppContent() {
                           Week Four
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFive">
+                          Week Five
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -281,6 +293,10 @@ function AppContent() {
           element={<WeekFour_ITPG_GT_2004 />}
         />
         <Route
+          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFive"
+          element={<WeekFive_ITPG_GT_2004 />}
+        />
+        <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media"
           element={<ITPG_GT_2233_Intro_to_Comp_Media />}
         />
@@ -323,6 +339,10 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFour"
           element={<WeekFour_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFive"
+          element={<WeekFive_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
