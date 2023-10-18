@@ -20,7 +20,7 @@ const WeekSix = () => {
         <Header>Week Six</Header>
         <Text>
           Took some time to work on a new sketch for this week. I have this
-          gradient animation on
+          gradient-ish animation on
           <Links to="https://www.matthewlaujh.com">my portfolio site</Links>
           that has a gradient with a slitscan-like effect that moves in the
           background and the direction is affected by the mouse movement. I've
