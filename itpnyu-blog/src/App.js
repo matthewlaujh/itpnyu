@@ -23,6 +23,7 @@ import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/W
 import WeekThree_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekThree"
 import WeekFour_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFour"
 import WeekFive_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFive"
+// import WeekSix_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSix"
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media"
 import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne"
@@ -38,6 +39,8 @@ import WeekTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physica
 import WeekThree_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekThree"
 import WeekFour_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFour"
 import WeekFive_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFive"
+import WeekSix_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSix"
+import WeekSeven_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSeven"
 
 function App() {
   return (
@@ -72,6 +75,7 @@ function AppContent() {
       WeekFour: "Week Four",
       WeekFive: "Week Five",
       WeekSix: "Week Six",
+      WeekSeven: "Week Seven",
     }
 
     return parts.map((part) => displayNames[part] || part).join(" — ")
@@ -255,6 +259,16 @@ function AppContent() {
                           Week Five
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSix">
+                          Week Six
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSeven">
+                          Week Seven
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -354,6 +368,14 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFive"
           element={<WeekFive_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSix"
+          element={<WeekSix_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSeven"
+          element={<WeekSeven_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
