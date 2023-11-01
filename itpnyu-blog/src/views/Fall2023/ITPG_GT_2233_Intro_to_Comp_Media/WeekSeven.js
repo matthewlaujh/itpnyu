@@ -86,7 +86,7 @@ const WeekSeven = () => {
                 fill(r, g, b, a);
                 // rect(x, y, radius, radius);
                 
-                      beginShape();
+                beginShape();
                 for (let wx = 0; wx <= size; wx += 5) {
                   let wiggleY = sin(wx * 0.1 + frameCount * 0.1) * 10;
                   vertex(x + wx, y + size / 2 + wiggleY);
