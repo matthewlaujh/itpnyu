@@ -23,6 +23,8 @@ import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/W
 import WeekThree_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekThree"
 import WeekFour_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFour"
 import WeekFive_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFive"
+import WeekSix_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSix"
+import WeekSeven_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSeven"
 // import WeekSix_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSix"
 // Intro to Comp Media
 import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media"
@@ -189,6 +191,16 @@ function AppContent() {
                           Week Five
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSix">
+                          Week Six
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSeven">
+                          Week Seven
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -322,6 +334,14 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFive"
           element={<WeekFive_ITPG_GT_2004 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSix"
+          element={<WeekSix_ITPG_GT_2004 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSeven"
+          element={<WeekSeven_ITPG_GT_2004 />}
         />
         <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media"
