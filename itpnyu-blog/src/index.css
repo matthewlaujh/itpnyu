@@ -119,3 +119,23 @@
   left: 0;
   padding: 2em;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    grid-template-columns: repeat(1, 1fr); /* Change the number of columns */
+    height: auto; /* Remove fixed height for smaller screens */
+    padding: 1em; /* Adjust padding for smaller screens */
+  }
+
+  .navColumn {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin: 0;
+    padding: 0;
+  }
+}
