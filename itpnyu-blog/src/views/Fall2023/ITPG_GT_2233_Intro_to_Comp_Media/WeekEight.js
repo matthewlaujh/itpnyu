@@ -46,7 +46,7 @@ const WeekEight = () => {
           accessible and easy to use, it was difficult to achieve good results,
           so in that case APIs might be better but if creatives could gather
           together a large enough dataset, Teachable Machine could definitely be
-          a viable option.
+          a viable option to explore further.
         </Text>
         <Iframes
           src="https://https://teachablemachine.withgoogle.com/models/HpFsC_SpE/.p5js.org/matthewlaujh-itpnyu/full/sHkfsW_m0"
