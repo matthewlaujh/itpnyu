@@ -47,6 +47,17 @@ const WeekEight = () => {
           so in that case APIs might be better but if creatives could gather
           together a large enough dataset, Teachable Machine could definitely be
           a viable option to explore further.
+          <br></br>
+          <br></br>
+          Even trying it now, it has the same issues even when it's a single
+          person dataset for emotional expression using facial expressions. It
+          still can't quite pick up the subtle differences in the face. But I
+          thought it was worth revisiting this for this exercise. And maybe I
+          should try to develop it further to see if I can get a model for my
+          face stable and running properly. The p5.js sketch here overlays a
+          colour (based on emotion colour theory) over the video depending on
+          the emotions being show as a visual cue for what emotion you are
+          showing.
         </Text>
         <Iframes
           src="https://https://teachablemachine.withgoogle.com/models/HpFsC_SpE/.p5js.org/matthewlaujh-itpnyu/full/sHkfsW_m0"
