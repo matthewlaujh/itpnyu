@@ -17,7 +17,7 @@ const WeekSeven = () => {
   return (
     <Container>
       <div>
-        <Header>Week Six</Header>
+        <Header>Week Seven</Header>
         <ExternalText>
           Create and/or manipulate an image (or images or video) to create an
           alternative reality than depicted in the source image(s). Describe how

@@ -120,22 +120,32 @@
   padding: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav {
     grid-template-columns: repeat(1, 1fr); /* Change the number of columns */
-    height: auto; /* Remove fixed height for smaller screens */
-    padding: 1em; /* Adjust padding for smaller screens */
+    height: 100vh; /* Remove fixed height for smaller screens */
+    padding: 2em; /* Adjust padding for smaller screens */
   }
 
   .navColumn {
-    margin-top: 10px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .nav li {
-    margin: 0;
-    padding: 0;
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2em;
+  }
+
+  .aboutColumn-mobile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    padding: 2em;
+    color: white;
   }
 }

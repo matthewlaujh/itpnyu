@@ -35,6 +35,7 @@ import WeekFour_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_M
 import WeekFive_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekFive"
 import WeekSix_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekSix"
 import WeekSeven_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekSeven"
+import WeekEight_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekEight"
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp"
 import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
@@ -44,6 +45,7 @@ import WeekFour_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physic
 import WeekFive_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFive"
 import WeekSix_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSix"
 import WeekSeven_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSeven"
+import WeekEight_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekEight"
 
 function App() {
   return (
@@ -79,6 +81,7 @@ function AppContent() {
       WeekFive: "Week Five",
       WeekSix: "Week Six",
       WeekSeven: "Week Seven",
+      WeekEight: "Week Eight",
     }
 
     return parts.map((part) => displayNames[part] || part).join(" — ")
@@ -111,38 +114,6 @@ function AppContent() {
                 <Link to="/">Home</Link>
               </li>
               <p>—</p>
-              <div className="about">
-                <p>
-                  Blog is currently functional but I haven't had the opportunity
-                  to style the components yet. I will take some time to work out
-                  the design and aesthetics over the next few weeks. Please bear
-                  with it for now, I promise it'll look better with each week,
-                  Thank you!
-                  <br></br>
-                  <br></br>
-                  Portfolio:{" "}
-                  <a href="https://matthewlaujh.com">matthewlaujh.com</a>
-                  <br></br>
-                  <br></br>
-                  Contact me at{" "}
-                  <a href="mailto:matthewlau@nyu.edu">matthewlau@nyu.edu.</a>
-                  <br></br>
-                  <br></br>
-                  Documenting work completed as part of the MPS Interactive
-                  Telecommunications Program at NYU.
-                  <br></br>
-                  <br></br>This blog is designed and built from scratch using
-                  React, as a way for me to learn React and push my front-end
-                  capabilities. This blog is being co created with Generative AI
-                  assistance (ChatGPT + GitHub Copilot) and will be consistently
-                  updated throughout the semester.
-                  <br></br>
-                  <br></br>The text is output in typeface Austin News Deck by
-                  Commercial Type (Paul Barnes), New York City.
-                  <br></br>
-                  <br></br>© 2023 Lau Jun Hui Matthew or source as noted.
-                </p>
-              </div>
             </ul>
             <ul className="navColumn">
               <li>
@@ -244,6 +215,11 @@ function AppContent() {
                           Week Seven
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekEight">
+                          Week Eight
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -287,12 +263,51 @@ function AppContent() {
                           Week Seven
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekEight">
+                          Week Eight
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
                 </ul>
               </li>
             </ul>
+            <div className="aboutColumn-mobile">
+              <div className="about">
+                <p>
+                  About: <br></br>— <br></br>Blog is currently functional but I
+                  haven't had the opportunity to style the components yet. I
+                  will take some time to work out the design and aesthetics over
+                  the next few weeks. Please bear with it for now, I promise
+                  it'll look better with each week, Thank you!
+                  <br></br>
+                  <br></br>
+                  Portfolio:{" "}
+                  <a href="https://matthewlaujh.com">matthewlaujh.com</a>
+                  <br></br>
+                  <br></br>
+                  Contact me at{" "}
+                  <a href="mailto:matthewlau@nyu.edu">matthewlau@nyu.edu.</a>
+                  <br></br>
+                  <br></br>
+                  Documenting work completed as part of the MPS Interactive
+                  Telecommunications Program at NYU.
+                  <br></br>
+                  <br></br>This blog is designed and built from scratch using
+                  React, as a way for me to learn React and push my front-end
+                  capabilities. This blog is being co created with Generative AI
+                  assistance (ChatGPT + GitHub Copilot) and will be consistently
+                  updated throughout the semester.
+                  <br></br>
+                  <br></br>The text is output in typeface Austin News Deck by
+                  Commercial Type (Paul Barnes), New York City.
+                  <br></br>
+                  <br></br>© 2023 Lau Jun Hui Matthew or source as noted.
+                </p>
+              </div>
+            </div>
           </>
         )}
       </nav>
@@ -376,6 +391,10 @@ function AppContent() {
           element={<WeekSeven_ITPG_GT_2233 />}
         />
         <Route
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekEight"
+          element={<WeekEight_ITPG_GT_2233 />}
+        />
+        <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp"
           element={<ITPG_GT_2301_Intro_to_Physical_Comp />}
         />
@@ -406,6 +425,10 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSeven"
           element={<WeekSeven_ITPG_GT_2301 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekEight"
+          element={<WeekEight_ITPG_GT_2301 />}
         />
       </Routes>
     </div>
