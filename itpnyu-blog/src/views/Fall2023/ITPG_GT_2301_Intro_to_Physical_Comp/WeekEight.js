@@ -37,4 +37,4 @@ const WeekEight = () => {
     </Container>
   )
 }
-export default WeekSeven
+export default WeekEight
