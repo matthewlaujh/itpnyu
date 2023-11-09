@@ -13,7 +13,7 @@ import Links from "../../../components/Links"
 import P5Sketch from "../../../components/P5Sketch"
 import ImagesCarousel from "../../../components/ImagesCarousel"
 
-const WeekFive = () => {
+const WeekSix = () => {
   return (
     <Container>
       <div>
@@ -162,4 +162,4 @@ const WeekFive = () => {
   )
 }
 
-export default WeekFive
+export default WeekSix
