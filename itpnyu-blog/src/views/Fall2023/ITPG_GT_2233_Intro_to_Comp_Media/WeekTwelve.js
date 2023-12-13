@@ -54,6 +54,7 @@ const WeekTwelve = () => {
           site, that is interesting enough a background to keep viewers
           interested but not too distracting so that they can look at my work.
           <br></br>
+          <br></br>
           Also to be completely honest I didn't follow any tutorials for this
           sketch but I used a combination of github copilot, chatgpt and hi to
           p5js to aid in the coding process. This was a good exercise in
@@ -67,7 +68,7 @@ const WeekTwelve = () => {
           truly say that I reached the end goal of the sketch.
         </Text>
         <Iframes
-          src="https://editor.p5js.org/matthewlaujh-itpnyu/full/FQtE3kNSGT"
+          src="https://editor.p5js.org/matthewlaujh-itpnyu/full/FQtE3kNSG"
           title="p5.js sketch of https://editor.p5js.org/matthewlaujh-itpnyu/full/FQtE3kNSG"
           height="50vh"
         />
