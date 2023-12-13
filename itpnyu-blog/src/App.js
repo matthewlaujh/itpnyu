@@ -37,6 +37,8 @@ import WeekSix_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Me
 import WeekSeven_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekSeven"
 import WeekEight_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekEight"
 import WeekNine_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekNine"
+import WeekTen_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTen"
+import WeekTwelve_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwelve"
 //  Intro to Physical Comp
 import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp"
 import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
@@ -75,7 +77,6 @@ function AppContent() {
       "itpg-gt-2233-intro-to-comp-media": "ITPG-GT 2233: Intro to Comp Media",
       "itpg-gt-2301-intro-to-physical-comp":
         "ITPG-GT 2301: Intro to Physical Comp",
-      "itpg-gt-2637-intro-to-fabrication": "ITPG-GT 2637: Intro to Fabrication",
       WeekOne: "Week One",
       WeekTwo: "Week Two",
       WeekThree: "Week Three",
@@ -85,6 +86,8 @@ function AppContent() {
       WeekSeven: "Week Seven",
       WeekEight: "Week Eight",
       WeekNine: "Week Nine",
+      WeekTen: "Week Ten",
+      WeekTwelve: "Week Twelve",
     }
 
     return parts.map((part) => displayNames[part] || part).join(" — ")
@@ -231,6 +234,16 @@ function AppContent() {
                       <li>
                         <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekNine">
                           Week Nine
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTen">
+                          Week Ten
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwelve">
+                          Week Twelve
                         </Link>
                       </li>
                       <p>—</p>
@@ -419,6 +432,14 @@ function AppContent() {
         <Route
           path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekNine"
           element={<WeekNine_ITPG_GT_2233 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTen"
+          element={<WeekTen_ITPG_GT_2233 />}
+        />
+        <Route
+          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwelve"
+          element={<WeekTwelve_ITPG_GT_2233 />}
         />
         <Route
           path="/fall-2023/itpg-gt-2301-intro-to-physical-comp"
