@@ -19,11 +19,14 @@ const BlogPost = () => {
       <div>
         <Header>Week 14</Header>
         <Subheader>Cornell Box Final — Noise.</Subheader>
-        <VideoPlayer
+        {/* <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-fall2023-itpg-gt2004-cl-hypercinema-videos/itpg-gt-2004-cl-hypercinema-weekEight-syntheticMedia-theAscensionAlgorithm.mov"
           alt="Description of video"
-        />
+        /> */}
         <Text>
+          VIDEO DOCUMENTATION UPLOADING IN PROGRESS, WILL BE ADDED SOON.
+          <br></br>
+          <br></br>
           Noise is a semi-interactive object that captures the randomness of
           noise within a space and visualizes it through abstract patterns.
           Inspired by capturing soundscapes and the idea that there is no real
