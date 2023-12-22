@@ -16,40 +16,54 @@ import Fall2023 from "./views/Fall2023/Fall2023"
 // Applications
 // import ITPG_GT_2000_Applications from "./views/Fall2023/ITPG_GT_2000_Applications/ITPG_GT_2000_Applications";
 // import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
-// Hypercinema
-import ITPG_GT_2004_CL_Hypercinema from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/ITPG_GT_2004_CL_Hypercinema"
-import WeekOne_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekOne"
-import WeekTwo_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekTwo"
-import WeekThree_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekThree"
-import WeekFour_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFour"
-import WeekFive_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekFive"
-import WeekSix_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSix"
-import WeekSeven_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekSeven"
-import WeekEight_ITPG_GT_2004 from "./views/Fall2023/ITPG_GT_2004_CL_Hypercinema/WeekEight"
-// Intro to Comp Media
-import ITPG_GT_2233_Intro_to_Comp_Media from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/ITPG_GT_2233_Intro_to_Comp_Media"
-import WeekOne_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekOne"
-import WeekTwo_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwo"
-import WeekThree_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekThree"
-import WeekFour_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekFour"
-import WeekFive_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekFive"
-import WeekSix_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekSix"
-import WeekSeven_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekSeven"
-import WeekEight_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekEight"
-import WeekNine_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekNine"
-import WeekTen_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTen"
-import WeekTwelve_ITPG_GT_2233 from "./views/Fall2023/ITPG_GT_2233_Intro_to_Comp_Media/WeekTwelve"
-//  Intro to Physical Comp
-import ITPG_GT_2301_Intro_to_Physical_Comp from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/ITPG_GT_2301_Intro_to_Physical_Comp"
-import WeekOne_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekOne"
-import WeekTwo_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekTwo"
-import WeekThree_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekThree"
-import WeekFour_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFour"
-import WeekFive_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekFive"
-import WeekSix_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSix"
-import WeekSeven_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekSeven"
-import WeekEight_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekEight"
-import WeekNine_ITPG_GT_2301 from "./views/Fall2023/ITPG_GT_2301_Intro_to_Physical_Comp/WeekNine"
+// Communications Lab Hypercinema
+import ItpgGt2004CourseOverview from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview"
+import ItpgGt2004Week1 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1"
+import ItpgGt2004Week2 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week2"
+import ItpgGt2004Week3 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week3"
+import ItpgGt2004Week4 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week4"
+import ItpgGt2004Week5 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week5"
+import ItpgGt2004Week6 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week6"
+import ItpgGt2004Week7 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week7"
+import ItpgGt2004Week8 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week8"
+import ItpgGt2004Week9 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week9"
+import ItpgGt2004Week10 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week10"
+import ItpgGt2004Week11 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week11"
+import ItpgGt2004Week12 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week12"
+import ItpgGt2004Week13 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week13"
+import ItpgGt2004Week14 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week14"
+// Intro to Computational Media
+import ItpgGt2233CourseOverview from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview"
+import ItpgGt2233Week1 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week1"
+import ItpgGt2233Week2 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week2"
+import ItpgGt2233Week3 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week3"
+import ItpgGt2233Week4 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week4"
+import ItpgGt2233Week5 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week5"
+import ItpgGt2233Week6 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week6"
+import ItpgGt2233Week7 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week7"
+import ItpgGt2233Week8 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week8"
+import ItpgGt2233Week9 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week9"
+import ItpgGt2233Week10 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week10"
+import ItpgGt2233Week11 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week11"
+import ItpgGt2233Week12 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week12"
+import ItpgGt2233Week13 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week13"
+import ItpgGt2233Week14 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week14"
+//  Intro to Physical Computing
+import ItpgGt2301CourseOverview from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview"
+import ItpgGt2301Week1 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week1"
+import ItpgGt2301Week2 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week2"
+import ItpgGt2301Week3 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week3"
+import ItpgGt2301Week4 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week4"
+import ItpgGt2301Week5 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week5"
+import ItpgGt2301Week6 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week6"
+import ItpgGt2301Week7 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week7"
+import ItpgGt2301Week8 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week8"
+import ItpgGt2301Week9 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week9"
+import ItpgGt2301Week10 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week10"
+import ItpgGt2301Week11 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week11"
+import ItpgGt2301Week12 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week12"
+import ItpgGt2301Week13 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week13"
+import ItpgGt2301Week14 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week14"
 
 function App() {
   return (
@@ -67,30 +81,43 @@ function AppContent() {
 
   const displayActiveRoute = () => {
     const parts = location.pathname.split("/").filter(Boolean)
-    if (parts.length === 0) return "Home"
-    if (parts.length === 1 && parts[0] === "about") return "About"
-
-    const displayNames = {
-      "fall-2023": "Fall 2023",
-      "itpg-gt-2000-applications": "ITPG-GT 2000: Applications",
-      "itpg-gt-2004-cl-hypercinema": "ITPG-GT 2004: CL Hypercinema",
-      "itpg-gt-2233-intro-to-comp-media": "ITPG-GT 2233: Intro to Comp Media",
-      "itpg-gt-2301-intro-to-physical-comp":
-        "ITPG-GT 2301: Intro to Physical Comp",
-      WeekOne: "Week One",
-      WeekTwo: "Week Two",
-      WeekThree: "Week Three",
-      WeekFour: "Week Four",
-      WeekFive: "Week Five",
-      WeekSix: "Week Six",
-      WeekSeven: "Week Seven",
-      WeekEight: "Week Eight",
-      WeekNine: "Week Nine",
-      WeekTen: "Week Ten",
-      WeekTwelve: "Week Twelve",
+    const academicSemester = {
+      Fall2023: "Fall 2023",
     }
-
-    return parts.map((part) => displayNames[part] || part).join(" — ")
+    const courseNames = {
+      ItpgGt2004CommunicationsLabHypercinema:
+        "ITPG GT 2004 Communications Lab Hypercinema",
+      ItpgGt2233IntroToComputationalMedia:
+        "ITPG GT 2233 Intro to Computational Media",
+      ItpgGt2301IntroToPhysicalComputing:
+        "ITPG GT 2301 Intro to Physical Computing",
+    }
+    const blogWeek = {
+      CourseOverview: "Course Overview",
+      Week1: "Week 1",
+      Week2: "Week 2",
+      Week3: "Week 3",
+      Week4: "Week 4",
+      Week5: "Week 5",
+      Week6: "Week 6",
+      Week7: "Week 7",
+      Week8: "Week 8",
+      Week9: "Week 9",
+      Week10: "Week 10",
+      Week11: "Week 11",
+      Week12: "Week 12",
+      Week13: "Week 13",
+      Week14: "Week 14",
+    }
+    let displayPath = parts
+      .map((part) => {
+        if (academicSemester[part]) return academicSemester[part]
+        if (courseNames[part]) return courseNames[part]
+        if (blogWeek[part]) return blogWeek[part]
+        return part.charAt(0).toUpperCase() + part.slice(1) // Capitalize first letter of other paths
+      })
+      .join(" / ")
+    return displayPath || "Home"
   }
 
   useEffect(() => {
@@ -139,164 +166,234 @@ function AppContent() {
                     </ul>
                   </li> */}
                   <li>
-                    <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema">
-                      ITPG-GT 2004: CL Hypercinema
+                    <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
+                      ITPG-GT 2004: Communications Lab Hypercinema
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekOne">
-                          Week One
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1">
+                          Week 1
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekTwo">
-                          Week Two
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week2">
+                          Week 2
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekThree">
-                          Week Three
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week3">
+                          Week 3
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFour">
-                          Week Four
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week4">
+                          Week 4
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFive">
-                          Week Five
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week5">
+                          Week 5
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSix">
-                          Week Six
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week6">
+                          Week 6
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSeven">
-                          Week Seven
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week7">
+                          Week 7
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekEight">
-                          Week Eight
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week8">
+                          Week 8
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week9">
+                          Week 9
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week10">
+                          Week 10
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week11">
+                          Week 11
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week12">
+                          Week 12
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week13">
+                          Week 13
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week14">
+                          Week 14
                         </Link>
                       </li>
                       <p>—</p>
                     </ul>
                   </li>
                   <li>
-                    <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media">
-                      ITPG-GT 2233: Intro to Comp Media
+                    <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview">
+                      ITPG-GT 2233: Intro to Computational Media
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekOne">
-                          Week One
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week1">
+                          Week 1
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwo">
-                          Week Two
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week2">
+                          Week 2
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekThree">
-                          Week Three
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week3">
+                          Week 3
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFour">
-                          Week Four
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week4">
+                          Week 4
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFive">
-                          Week Five
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week5">
+                          Week 5
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekSix">
-                          Week Six
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week6">
+                          Week 6
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekSeven">
-                          Week Seven
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week7">
+                          Week 7
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekEight">
-                          Week Eight
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week8">
+                          Week 8
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekNine">
-                          Week Nine
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week9">
+                          Week 9
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTen">
-                          Week Ten
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week10">
+                          Week 10
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwelve">
-                          Week Twelve
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week11">
+                          Week 11
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week12">
+                          Week 12
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week13">
+                          Week 13
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week14">
+                          Week 14
                         </Link>
                       </li>
                       <p>—</p>
                     </ul>
                   </li>
                   <li>
-                    <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp">
-                      ITPG-GT 2301: Intro to Physical Comp
+                    <Link to="/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview">
+                      ITPG-GT 2301: Intro to Physical Computing
                     </Link>
                     <ul className="labNav">
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekOne">
-                          Week One
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week1">
+                          Week 1
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekTwo">
-                          Week Two
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week2">
+                          Week 2
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekThree">
-                          Week Three
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week3">
+                          Week 3
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFour">
-                          Week Four
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week4">
+                          Week 4
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFive">
-                          Week Five
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week5">
+                          Week 5
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSix">
-                          Week Six
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week6">
+                          Week 6
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSeven">
-                          Week Seven
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week7">
+                          Week 7
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekEight">
-                          Week Eight
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week8">
+                          Week 8
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekNine">
-                          Week Nine
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week9">
+                          Week 9
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week10">
+                          Week 10
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week11">
+                          Week 11
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week12">
+                          Week 12
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week13">
+                          Week 13
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="Fall2023/ItpgGt2301IntroToPhysicalComputing/Week14">
+                          Week 14
                         </Link>
                       </li>
                       <p>—</p>
@@ -308,11 +405,12 @@ function AppContent() {
             <div className="aboutColumn-mobile">
               <div className="about">
                 <p>
-                  About: <br></br>— <br></br>Blog is currently functional but I
-                  haven't had the opportunity to style the components yet. I
-                  will take some time to work out the design and aesthetics over
-                  the next few weeks. Please bear with it for now, I promise
-                  it'll look better with each week, Thank you!
+                  About:<br></br>
+                  <br></br>Blog is currently functional but I haven't had the
+                  opportunity to style the components yet. I will take some time
+                  to work out the design and aesthetics over the next few weeks.
+                  Please bear with it for now, I promise it'll look better with
+                  each week, Thank you!
                   <br></br>
                   <br></br>
                   Portfolio:{" "}
@@ -330,7 +428,7 @@ function AppContent() {
                   React, as a way for me to learn React and push my front-end
                   capabilities. This blog is being co created with Generative AI
                   assistance (ChatGPT + GitHub Copilot) and will be consistently
-                  updated throughout the semester.
+                  updated throughout my time at NYU ITP.
                   <br></br>
                   <br></br>The text is output in typeface Austin News Deck by
                   Commercial Type (Paul Barnes), New York City.
@@ -345,7 +443,6 @@ function AppContent() {
       <Routes>
         {/* General Navigation */}
         <Route path="/" element={<Home />} />
-
         {/* Fall 2023 */}
         <Route path="/fall-2023" element={<Fall2023 />} />
         {/* <Route
@@ -356,130 +453,188 @@ function AppContent() {
           path="/fall-2023/itpg-gt-2000-applications/lab-one"
           element={<LabOne_ITPG_GT_2000 />}
         /> */}
-
+        {/* Communications Lab Hypercinema */}
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema"
-          element={<ITPG_GT_2004_CL_Hypercinema />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview"
+          element={<ItpgGt2004CourseOverview />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekOne"
-          element={<WeekOne_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1"
+          element={<ItpgGt2004Week1 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekTwo"
-          element={<WeekTwo_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week2"
+          element={<ItpgGt2004Week2 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekThree"
-          element={<WeekThree_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week3"
+          element={<ItpgGt2004Week3 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFour"
-          element={<WeekFour_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week4"
+          element={<ItpgGt2004Week4 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekFive"
-          element={<WeekFive_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week5"
+          element={<ItpgGt2004Week5 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSix"
-          element={<WeekSix_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week6"
+          element={<ItpgGt2004Week6 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekSeven"
-          element={<WeekSeven_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week7"
+          element={<ItpgGt2004Week7 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2004-cl-hypercinema/WeekEight"
-          element={<WeekEight_ITPG_GT_2004 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week8"
+          element={<ItpgGt2004Week8 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media"
-          element={<ITPG_GT_2233_Intro_to_Comp_Media />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week9"
+          element={<ItpgGt2004Week9 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekOne"
-          element={<WeekOne_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week10"
+          element={<ItpgGt2004Week10 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwo"
-          element={<WeekTwo_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week11"
+          element={<ItpgGt2004Week11 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekThree"
-          element={<WeekThree_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week12"
+          element={<ItpgGt2004Week12 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFour"
-          element={<WeekFour_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week13"
+          element={<ItpgGt2004Week13 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekFive"
-          element={<WeekFive_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week14"
+          element={<ItpgGt2004Week14 />}
+        />
+        {/* Intro to Computational Media */}
+        <Route
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview"
+          element={<ItpgGt2233CourseOverview />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekSix"
-          element={<WeekSix_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week1"
+          element={<ItpgGt2233Week1 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekSeven"
-          element={<WeekSeven_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week2"
+          element={<ItpgGt2233Week2 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekEight"
-          element={<WeekEight_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week3"
+          element={<ItpgGt2233Week3 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekNine"
-          element={<WeekNine_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week4"
+          element={<ItpgGt2233Week4 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTen"
-          element={<WeekTen_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week5"
+          element={<ItpgGt2233Week5 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2233-intro-to-comp-media/WeekTwelve"
-          element={<WeekTwelve_ITPG_GT_2233 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week6"
+          element={<ItpgGt2233Week6 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp"
-          element={<ITPG_GT_2301_Intro_to_Physical_Comp />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week7"
+          element={<ItpgGt2233Week7 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekOne"
-          element={<WeekOne_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week8"
+          element={<ItpgGt2233Week8 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekTwo"
-          element={<WeekTwo_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week9"
+          element={<ItpgGt2233Week9 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekThree"
-          element={<WeekThree_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week10"
+          element={<ItpgGt2233Week10 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFour"
-          element={<WeekFour_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week11"
+          element={<ItpgGt2233Week11 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekFive"
-          element={<WeekFive_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week12"
+          element={<ItpgGt2233Week12 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSix"
-          element={<WeekSix_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week13"
+          element={<ItpgGt2233Week13 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekSeven"
-          element={<WeekSeven_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week14"
+          element={<ItpgGt2233Week14 />}
+        />
+        {/* Intro to Physical Computing */}
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview"
+          element={<ItpgGt2301CourseOverview />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekEight"
-          element={<WeekEight_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week1"
+          element={<ItpgGt2301Week1 />}
         />
         <Route
-          path="/fall-2023/itpg-gt-2301-intro-to-physical-comp/WeekNine"
-          element={<WeekNine_ITPG_GT_2301 />}
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week2"
+          element={<ItpgGt2301Week2 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week3"
+          element={<ItpgGt2301Week3 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week4"
+          element={<ItpgGt2301Week4 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week5"
+          element={<ItpgGt2301Week5 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week6"
+          element={<ItpgGt2301Week6 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week7"
+          element={<ItpgGt2301Week7 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week8"
+          element={<ItpgGt2301Week8 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week9"
+          element={<ItpgGt2301Week9 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week10"
+          element={<ItpgGt2301Week10 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week11"
+          element={<ItpgGt2301Week11 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week12"
+          element={<ItpgGt2301Week12 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week13"
+          element={<ItpgGt2301Week13 />}
+        />
+        <Route
+          path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week14"
+          element={<ItpgGt2301Week14 />}
         />
       </Routes>
     </div>
