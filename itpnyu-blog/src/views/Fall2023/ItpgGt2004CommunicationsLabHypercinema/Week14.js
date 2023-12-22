@@ -24,7 +24,11 @@ const BlogPost = () => {
           alt="Description of video"
         /> */}
         <Text>
-          VIDEO DOCUMENTATION UPLOADING IN PROGRESS, WILL BE ADDED SOON.
+          VIDEO DOCUMENTATION UPLOADING IN PROGRESS, WILL BE ADDED SOON. SLIGHT
+          ISSUE WITH THE SOLDERING OF THE PIEZO, AM CURRENTLY UNABLE TO GET
+          DOCUMENTATION UNTIL I GO TO THE FLOOR TOMORROW TO SOLDER IT BACK, WILL
+          ONLY BE ABLE TO GET VIDEO DOCUMENTATION THEN. SORRY GABE. FORGOT TO
+          TAKE VIDEOS IN THE RUSH OF FINALS AND THE SHOW.
           <br></br>
           <br></br>
           Noise is a semi-interactive object that captures the randomness of
