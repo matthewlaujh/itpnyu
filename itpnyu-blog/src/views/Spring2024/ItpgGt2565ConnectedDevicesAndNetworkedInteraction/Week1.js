@@ -153,29 +153,25 @@ const BlogPost = () => {
           how they communicated with each other across such a vast landscape.
           <br></br>
           <br></br>I don't come from a product design background, but I really
-          love products. The allure of installations drew me away from
-          developing a connected device during undergrad but one of the projects
-          I really want to work on is creating connected devices - one such idea
-          was maybe a connected keyboard where as you type, the keys light up on
-          the other end and vice versa to communicate presence and shared
-          experience. Hopefully that's something that I could start working on
-          in this class in combination with my two other Physical Computing
-          classes Electronics for Inventors and Homemade Hardware, I think these
-          three classes together would give me a good foundation to at least
-          create a simple prototype of this idea.
+          love products. Installations drew me away from developing a connected
+          device during undergrad but one of the projects I really want to work
+          on is creating connected devices - one such idea was maybe a connected
+          keyboard where as you type, the keys light up on the other end and
+          vice versa to communicate presence and shared experience. Hopefully
+          that's something that I could start working on in this class in
+          combination with my two other Physical Computing classes Electronics
+          for Inventors and Homemade Hardware, I think these three classes
+          together would give me a good foundation to at least create a simple
+          prototype of this idea.
         </Text>
         <Subheader>Homework.</Subheader>
         <ExternalText>
-          Homework —<br></br>
-          <br></br>
           Using an Arduino and Node-RED, stream some data from a sensor of your
-          choice into a text file.
-          <br></br>
-          Then, try creating a custom JavaScript function to perform on your
-          data stream by routing it through a FUNCTION node. The function can
-          manipulate the data or enforce some sort of condition, only passing
-          the data if it meets the condition. The transformation/condition can
-          be arbitrary!
+          choice into a text file. Then, try creating a custom JavaScript
+          function to perform on your data stream by routing it through a
+          FUNCTION node. The function can manipulate the data or enforce some
+          sort of condition, only passing the data if it meets the condition.
+          The transformation/condition can be arbitrary!
         </ExternalText>
         <Text>
           Decided to use the onboard Accelerometer on the Arduino Nano 33 IOT

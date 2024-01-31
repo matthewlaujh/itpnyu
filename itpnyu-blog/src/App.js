@@ -173,6 +173,7 @@ function AppContent() {
           </>
         ) : (
           <>
+
             {/* Home */}
             <ul className="navColumn">
               <li>
