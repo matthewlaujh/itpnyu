@@ -152,7 +152,7 @@ const BlogPost = () => {
           Whilst the interaction was simple I thought it was really interesting
           how they communicated with each other across such a vast landscape.
           <br></br>
-          <br></br>I don't come from a product design background, but I really
+          <br></br>I didn't come from a product design background, but I really
           love products. Installations drew me away from developing a connected
           device during undergrad but one of the projects I really want to work
           on is creating connected devices - one such idea was maybe a connected
