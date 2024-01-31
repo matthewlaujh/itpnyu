@@ -41,9 +41,9 @@ const BlogPost = () => {
           concept, with it just kind of serving as a Proof of Concept mock up
           that could potential be scaled in the future to be remote -{" "}
           <Links to="https://matthewlaujh.com/Hello-I-m-Here-Exhibition-2022">
-            Hello I'm Here
+            Hello I'm Here.
           </Links>
-          .<br></br>
+          <br></br>
           <br></br>Those were part of my motivations for taking this class and
           also back then before I thought of doing the projects as an
           installation I was largely influenced and inspired by these two
@@ -134,7 +134,7 @@ const BlogPost = () => {
           <br></br>
           On top of those, some networked projects that I also like is this{" "}
           <Links to="https://themill.com/the-mill-plus/work/ee-close-yet-a-far-shave-bts/">
-            A Close Yet Far Shave by The Mill for EE to promote 5G Connection
+            A Close Yet Far Shave by The Mill for EE
           </Links>
           , now I don't quite know how it works but I thought it was insane how
           they used motion capture on a barber in London and then sending the
@@ -177,18 +177,144 @@ const BlogPost = () => {
           the data if it meets the condition. The transformation/condition can
           be arbitrary!
         </ExternalText>
-        <Text></Text>
+        <Text>
+          Decided to use the onboard Accelerometer on the Arduino Nano 33 IOT
+          for the homework, I thought this was good exercise as it could send
+          multiple data points (x,y,z) and contextually an accelerometer could
+          be used for different object and installation purposes to detect
+          movement. I also thought it would be interesting to see how the data
+          would be represented in Node Red and how I could manipulate the data
+          to create a condition. I followed the guides on the Arduino website to
+          set up the accelerometer (Simple Accelerometer from the Arduino
+          LSM6DS3 library) and tweaked the TCPsender example to send the data to
+          Node Red. Then used the Node Red guides that were fairly manageable to
+          follow to set up the conditions and since this was in Javascript I
+          managed to find the math functions I needed to set the threshold for
+          the data.
+          <br></br>
+          <br></br>
+          However I did face a problem when I tried to output both the Text and
+          the Data, so outputting two messages (last video below), it only
+          output the first object which was the accelerometer data and not the
+          classifying text even though I've put them both in the array as shown
+          in the Node Red guide to outputting multiple messages. Not sure how to
+          fix this.
+        </Text>
         <Subheader>On-board Accelerometer.</Subheader>
+        <CodeSnippets
+          language="arduino"
+          code={`// Provided as in class example, tweaked by me to send Accelerometer Code based on SimpleAccelerator example from the Arduino_LSM6DS3 library
+
+#include <WiFiNINA.h>
+#include <Arduino_LSM6DS3.h>
+
+WiFiClient client;
+
+const char server[] = "";  //local IP address of receiver device goes here
+const int portNum = ;              //desired port # goes here. Make sure the receiver is listening on the same port!
+
+//be sure to remove WiFi network details before uploading this code!
+const char WIFI_SSID[] = "";         //WiFi network name goes here
+const char WIFI_PASS[] = "";  //WiFi password goes here
+
+void setup() {
+  Serial.begin(9600);
+  //retry connection until WiFi is connected successfully
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print("Attempting to connect to SSID: ");
+    // Attempt connection to WPA/WPA2 network.
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+    delay(3000);
+  }
+  Serial.println("connected!");
+    while (!Serial);
+
+  if (!IMU.begin()) {
+    Serial.println("Failed to initialize IMU!");
+
+    while (1);
+  }
+
+  Serial.print("Accelerometer sample rate = ");
+  Serial.print(IMU.accelerationSampleRate());
+  Serial.println(" Hz");
+  Serial.println();
+  Serial.println("Acceleration in g's");
+  Serial.println("X\tY\tZ");
+}
+
+void loop() {
+  //connect to client if disconnected, or send TCP message if conected
+
+  float x, y, z;
+
+  if (!client.connected()) {
+    Serial.println("connecting");
+    client.connect(server, portNum);
+    delay(1000);
+    return;
+  } else {
+    // Serial.println("sending TCP message");
+    if (IMU.accelerationAvailable()) {
+      IMU.readAcceleration(x, y, z);
+          Serial.print(x);
+    Serial.print('\t');
+    Serial.print(y);
+    Serial.print('\t');
+    Serial.println(z);
+    client.print(x);
+    client.print('\t');
+    client.print(y);
+    client.print('\t');
+    client.println(z);
+    }
+    delay(1);
+  }
+}
+`}
+        />
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer.mp4"
           alt="Description of video"
         />
         <Subheader>Node Red Write to File.</Subheader>
+        <Text>
+          <Links to="https://github.com/matthewlaujh/itpnyu/blob/a04f5ee310c46f88a1403546e60121fc8c1b4b40/itpggt2565-connectedDevicesAndNetworkedInteraction/week1/accelerometerData">
+            Link to Text File with Accelerometer Data.
+          </Links>
+        </Text>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer-nodeRedWriteToFile.mp4"
           alt="Description of video"
         />
         <Subheader>Node Red Function to Classify Fast Movement.</Subheader>
+        <Text>
+          <Links to="https://github.com/matthewlaujh/itpnyu/blob/a04f5ee310c46f88a1403546e60121fc8c1b4b40/itpggt2565-connectedDevicesAndNetworkedInteraction/week1/fastMovementTextData">
+            Link to Text File with Accelerometer Data Classifying Fast and Slow
+            Movement.
+          </Links>
+        </Text>
+        <CodeSnippets
+          language="javascript"
+          code={`const thresholdX = 2.0;
+const thresholdY = 2.0;
+const thresholdZ = 2.0;
+
+const data = msg.payload.split("\t");
+
+const x = parseFloat(data[0]);
+const y = parseFloat(data[1]);
+const z = parseFloat(data[2]);
+
+if (Math.abs(x) > thresholdX || Math.abs(y) > thresholdY || Math.abs(z) > thresholdZ) {
+    msg.payload = "Fast Movement";
+    return msg;
+} else {
+    msg.payload = "Slow or No Movement";
+    return msg;
+}
+`}
+        />
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer-nodeRedClassifyFastMovementText.mp4"
           alt="Description of video"
@@ -197,6 +323,38 @@ const BlogPost = () => {
           Node Red Function to Classify Fast Movement with Data (Not working
           properly).
         </Subheader>
+        <Text>
+          <Links to="https://github.com/matthewlaujh/itpnyu/blob/a04f5ee310c46f88a1403546e60121fc8c1b4b40/itpggt2565-connectedDevicesAndNetworkedInteraction/week1/fastMovementData">
+            Link to Text File with Accelerometer Data Classifying Fast and Slow
+            Movement with Data.
+          </Links>
+        </Text>
+        <CodeSnippets
+          language="javascript"
+          code={`const thresholdX = 2.0;
+const thresholdY = 2.0;
+const thresholdZ = 2.0;
+
+const data = msg.payload.split("\t");
+
+const x = parseFloat(data[0]);
+const y = parseFloat(data[1]);
+const z = parseFloat(data[2]);
+
+var msg1 = {payload:""}
+var msg2 = {payload:""}
+
+if (Math.abs(x) > thresholdX || Math.abs(y) > thresholdY || Math.abs(z) > thresholdZ) {
+    msg1.payload = { x: x, y: y, z: z };
+    msg2.payload = "Fast Movement";
+    return [[msg1], [msg2]];
+} else {
+    msg1.payload = { x: x, y: y, z: z };
+    msg2.payload = "Slow or No Movement";
+    return [[msg1], [msg2]];
+}
+`}
+        />
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer-nodeRedClassifyFastMovementTextAndData.mp4"
           alt="Description of video"
