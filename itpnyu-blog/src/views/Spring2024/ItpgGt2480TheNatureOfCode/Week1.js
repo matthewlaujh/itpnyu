@@ -77,7 +77,8 @@ const BlogPost = () => {
           this is a good start? A cold and slow start but a start nonetheless!
           Nothing fancy but I might need to rethink my plans to learn GLSL or
           maybe find a more manageable way to learn it while learning the stuff
-          from the Nature of Code.
+          from the Nature of Code. Just not sure if I can do both at the same
+          time, would I be sacrificing one for the other?
           <br></br>
           <br></br>
           Although not sure if it's just me but the colours from the Shaders
@@ -101,8 +102,8 @@ const BlogPost = () => {
 
 let shaderCanvas;
 let shaderTexture;
-let walker;
-
+let walkers = [];
+let numWalkers = 100;
 
 function preload() {
   shaderCanvas = loadShader('shader.vert', 'shader.frag');
@@ -112,23 +113,28 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   noStroke();
   
-  walker = new Walker();
   shaderTexture = createGraphics(400, 400, WEBGL);
   shaderTexture.noStroke();
-  background(255);
+  background(0);
+
+  for (let i = 0; i < numWalkers; i++) {
+    walkers.push(new Walker());
+  }
 }
 
 function draw() {
-  // background(255); 
   shaderTexture.shader(shaderCanvas);
   
   shaderCanvas.setUniform("u_resolution", [width, height]);
   shaderCanvas.setUniform("u_time", millis() / 1000.0);
-  shaderCanvas.setUniform("u_mouse", [mouseX, map(mouseY, 0, height, height, 0)]);
   
-  shaderTexture.rect(0,0,width,height);
-  walker.step();
-  walker.show();
+  shaderTexture.rect(0, 0, width, height);
+
+  // Update and display each Walker
+  for (let walker of walkers) {
+    walker.step();
+    walker.show();
+  }
 }
 
 function windowResized(){
@@ -137,30 +143,27 @@ function windowResized(){
 
 class Walker {
   constructor() {
-    this.x = width / 2;
-    this.y = height / 2;
+    this.x = random(width) - width / 2;
+    this.y = random(height) - height / 2;
     this.size = 20;
   }
 
   show() {
     push();
     texture(shaderTexture);
-    ellipse(this.x - width / 2, this.y - height / 2, this.size, this.size);
+    ellipse(this.x, this.y, this.size, this.size);
     pop();
   }
 
   step() {
-    
-    this.x += random(-1, 1);
-    this.y += random(-1, 1);
-    
-    this.xstep = this.x + random(-10, 10);
-    this.ystep = this.y + random(-10, 10);
+    this.xstep = random(-20, 20);
+    this.ystep = random(-20, 20);
 
-    this.x = lerp(this.x, this.xstep, 0.1);
-    this.y = lerp(this.y, this.ystep, 0.1);
+    this.x = lerp(this.x, this.x + this.xstep, 0.2);
+    this.y = lerp(this.y, this.y + this.ystep, 0.2);
   }
 }
+
 `}
         />
 
