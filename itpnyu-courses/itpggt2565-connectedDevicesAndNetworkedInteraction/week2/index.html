@@ -4,23 +4,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div>
     <div id="home">
+      <div id="header:">
       <h4>Week 2 Homework</h1>
+        <br></br>
+        <h5>Assignment #2 HTML Webpage</h5>
       <h6>
+        <ul>
         Create an HTML file including at least 4 different element types and at
-        least 10 elements total. At least one element should be an input
-        element. Create a stylesheet and link it to your webpage to style your
-        elements. Create a JS script for your page, either inside a script tag
-        or in a separate .js file, containing 3 different event listeners, all
-        of which should manipulate the appearance of your webpage by changing
-        some attribute of an element on the page: One of the event listeners
-        should be attached to your input element and do something with the
-        inputted value. One of the event listeners should be attached to the
-        window and respond to a mouse event (click, drag, move, etc.) or the
-        keyboard
+        least 10 elements total.
+        </ul>
+        <ul>
+        At least one element should be an input element.
+        </ul>
+        <ul>Create a stylesheet and link it to your webpage to style your
+          elements.
+        </ul>
+        <ul>
+          Create a JS script for your page, either inside a script tag
+          or in a separate .js file, containing 3 different event listeners, all
+          of which should manipulate the appearance of your webpage by changing
+          some attribute of an element on the page.
+          <ul>
+            One of the event listeners should be attached to your input element and do something with the inputted value.
+          </ul>
+          <ul>
+            One of the event listeners should be attached to the
+            window and respond to a mouse event (click, drag, move, etc.) or the
+            keyboard.
+          </ul>
+        </ul>
       </h6>
-      <button onclick="handleClick()" id="myButton">Click Me!</button>
-      <script src="script.js"></script>
     </div>
+    
+    <div id="content">
+      <label for="text">Input text here:</label>
+      <input type="text" id="inputText" name="text"></input>
+      <p id="displayText"></p>
+    </div>
+    <div>
+      <p id="footer">Moving the mouse changes the weight and slant of the text while holding shift triggers alternate characters.</p>
+    </div>
+      <script src="script.js"></script>
+  </div>
   </body>
 </html>
