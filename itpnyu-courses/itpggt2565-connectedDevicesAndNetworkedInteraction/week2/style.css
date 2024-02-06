@@ -1,14 +1,7 @@
-#styled {
-  color: chartreuse;
-  padding: 30px;
-  background-color: blanchedalmond;
-  border-color: powderblue;
-  border-style: dotted;
-}
-.styled {
-  color: khaki;
-  padding: 15px;
-  background-color: salmon;
-  border-color: forestgreen;
-  border-style: groove;
+#home {
+  background-color: rgb(215, 215, 215);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
