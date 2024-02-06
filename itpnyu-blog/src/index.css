@@ -3,40 +3,35 @@
   font-family: "Austin News Deck";
   font-weight: 300;
   font-style: normal;
-  src: url("https://itpnyublog.blob.core.windows.net/itpnyu-blog-fonts/AustinNewsDeck-Light.otf")
-    format("opentype");
+  src: url("./assets/fonts/AustinNewsDeck-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Austin News Deck";
   font-weight: 700;
   font-style: normal;
-  src: url("https://itpnyublog.blob.core.windows.net/itpnyu-blog-fonts/AustinNewsDeck-Bold.otf")
-    format("opentype");
+  src: url("./assets/fonts/AustinNewsDeck-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Atlas Grotesk";
   font-weight: 300;
   font-style: normal;
-  src: url("https://itpnyublog.blob.core.windows.net/itpnyu-blog-fonts/AtlasGrotesk-Light.otf")
-    format("opentype");
+  src: url("./assets/fonts/AtlasGrotesk-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Austin News Deck";
   font-weight: 300;
   font-style: italic;
-  src: url("https://itpnyublog.blob.core.windows.net/itpnyu-blog-fonts/AustinNewsDeck-LightItalic.otf")
-    format("opentype");
+  src: url("./assets/fonts/AustinNewsDeck-LightItalic.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Atlas Grotesk";
   font-weight: 300;
   font-style: italic;
-  src: url("https://itpnyublog.blob.core.windows.net/itpnyu-blog-fonts/AtlasGrotesk-LightItalic.otf")
-    format("opentype");
+  src: url("./assets/fonts/AtlasGrotesk-LightItalic.otf") format("opentype");
 }
 
 * {
