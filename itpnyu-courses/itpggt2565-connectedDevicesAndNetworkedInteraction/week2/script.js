@@ -1,5 +1,6 @@
 const inputText = document.getElementById("inputText")
 const displayText = document.getElementById("displayText")
+displayText.contentEditable = "true"
 function updateText() {
   displayText.textContent = inputText.value
 }

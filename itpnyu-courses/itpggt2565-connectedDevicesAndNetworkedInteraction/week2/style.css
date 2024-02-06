@@ -17,8 +17,8 @@
 #home {
   background-color: rgb(215, 215, 215);
   color: rgb(85, 90, 110);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 2vw 2vh;
 }
 
@@ -29,7 +29,7 @@
 #inputText {
   background-color: rgb(215, 215, 215);
   border: none;
-  border-bottom: 1px dotted rgb(85, 90, 110);
+  /* border-bottom: 1px dotted rgb(85, 90, 110); */
 }
 
 #displayText {
