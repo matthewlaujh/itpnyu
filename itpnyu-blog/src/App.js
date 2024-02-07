@@ -68,19 +68,25 @@ import ItpgGt2301Week14 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputin
 //  Electronics For Inventors
 import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 import ItpgGt2036Week1 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
+import ItpgGt2036Week2 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week2.js"
 //  The Nature of Code
 import ItpgGt2480CourseOverview from "./views/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview.js"
 import ItpgGt2480Week1 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week1.js"
+import ItpgGt2480Week2 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week2.js"
 //  Connected Devices and Networked Interactions
 import ItpgGt2565CourseOverview from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview.js"
 import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week1.js"
+import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
 //  Homemade Hardware
 import ItpgGt2767CourseOverview from "./views/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview.js"
 import ItpgGt2767Week1 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week1.js"
+import ItpgGt2767Week2 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week2.js"
 //  Into to Curating New Media Art
 // import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 // import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
-
+// Haptics
+// import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
+// import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
 function App() {
   return (
     <Router>
@@ -92,9 +98,8 @@ function App() {
 }
 
 function AppContent() {
-  {
-    /* JS Functions */
-  }
+  /* JS Functions */
+
   const { isNavCollapsed, setNavCollapsed } = useNav()
   const location = useLocation()
 
@@ -156,9 +161,8 @@ function AppContent() {
     }
   }, [location.pathname])
 
-  {
-    /* Homepage */
-  }
+  /* Homepage */
+
   return (
     <div>
       <nav className={`nav ${isNavCollapsed ? "collapsed" : ""}`}>
@@ -198,6 +202,7 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li> */}
+                  {/* ITPG-GT 2004: Communications Lab Hypercinema */}
                   <li>
                     <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
                       ITPG-GT 2004: Communications Lab Hypercinema
@@ -277,6 +282,7 @@ function AppContent() {
                     </ul>
                   </li>
                   <li>
+                    {/* ITPG-GT 2233: Intro to Computational Media   */}
                     <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview">
                       ITPG-GT 2233: Intro to Computational Media
                     </Link>
@@ -355,6 +361,7 @@ function AppContent() {
                     </ul>
                   </li>
                   <li>
+                    {/* ITPG-GT 2301: Intro to Physical Computing   */}
                     <Link to="/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview">
                       ITPG-GT 2301: Intro to Physical Computing
                     </Link>
@@ -450,6 +457,11 @@ function AppContent() {
                           Week 1
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2036ElectronicsForInventors/Week2">
+                          Week 2
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -461,6 +473,11 @@ function AppContent() {
                       <li>
                         <Link to="/Spring2024/ItpgGt2480TheNatureOfCode/Week1">
                           Week 1
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2480TheNatureOfCode/Week2">
+                          Week 2
                         </Link>
                       </li>
                       <p>—</p>
@@ -476,6 +493,11 @@ function AppContent() {
                           Week 1
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2">
+                          Week 2
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -487,6 +509,11 @@ function AppContent() {
                       <li>
                         <Link to="/Spring2024/ItpgGt2767HomemadeHardware/Week1">
                           Week 1
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2767HomemadeHardware/Week2">
+                          Week 2
                         </Link>
                       </li>
                       <p>—</p>
@@ -754,6 +781,10 @@ function AppContent() {
           path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week1"
           element={<ItpgGt2036Week1 />}
         />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week2"
+          element={<ItpgGt2036Week2 />}
+        />
         {/* The Nature Of Code */}
         <Route
           path="/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview"
@@ -762,6 +793,10 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2480TheNatureOfCode/Week1"
           element={<ItpgGt2480Week1 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week2"
+          element={<ItpgGt2480Week2 />}
         />
         {/* Connected Devices and Networked Interaction */}
         <Route
@@ -772,6 +807,10 @@ function AppContent() {
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week1"
           element={<ItpgGt2565Week1 />}
         />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2"
+          element={<ItpgGt2565Week2 />}
+        />
         {/* Homemade Hardware */}
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview"
@@ -780,6 +819,10 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/Week1"
           element={<ItpgGt2767Week1 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week2"
+          element={<ItpgGt2767Week2 />}
         />
       </Routes>
     </div>

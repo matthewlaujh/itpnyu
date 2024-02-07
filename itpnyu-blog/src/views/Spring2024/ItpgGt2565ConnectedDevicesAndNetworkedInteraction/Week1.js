@@ -164,7 +164,7 @@ const BlogPost = () => {
           together would give me a good foundation to at least create a simple
           prototype of this idea.
         </Text>
-        <Subheader>Homework.</Subheader>
+        <Subheader>Homework - TCP Output from Arduino.</Subheader>
         <ExternalText>
           Using an Arduino and Node-RED, stream some data from a sensor of your
           choice into a text file. Then, try creating a custom JavaScript
