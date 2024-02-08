@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Favorit Variable";
+  font-weight: 300;
+  font-style: normal;
+  src: url("ABCFavoritVariableEdu.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Favorit Variable";
+  font-weight: 400;
+  line-height: normal;
+}
+
+#home {
+  background-color: rgb(215, 215, 215);
+  color: rgb(85, 90, 110);
+  width: 100%;
+  height: 100%;
+  padding: 2vw 2vh;
+}
+
+#content {
+  padding-top: 2vh;
+}
+
+#inputText {
+  background-color: rgb(215, 215, 215);
+  border: none;
+  /* border-bottom: 1px dotted rgb(85, 90, 110); */
+}
+
+#displayText {
+  font-size: 10vw;
+  text-align: center;
+  padding: 20vh 10vw;
+  word-wrap: break-word;
+}
+
+#footer {
+  position: fixed;
+  bottom: 2vw;
+}
