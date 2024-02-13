@@ -13,10 +13,10 @@ import Home from "./views/Home/Home"
 import { NavProvider, useNav } from "./context/NavContext"
 // Fall 2023
 import Fall2023 from "./views/Fall2023/Fall2023"
-// Applications
+// ITPG-GT 2000: Applications
 // import ITPG_GT_2000_Applications from "./views/Fall2023/ITPG_GT_2000_Applications/ITPG_GT_2000_Applications";
 // import LabOne_ITPG_GT_2000 from "./views/Fall2023/ITPG_GT_2000_Applications/LabOne";
-// Communications Lab Hypercinema
+// ITPG-GT 2004: Communications Lab Hypercinema
 import ItpgGt2004CourseOverview from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview"
 import ItpgGt2004Week1 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1"
 import ItpgGt2004Week2 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week2"
@@ -32,7 +32,7 @@ import ItpgGt2004Week11 from "./views/Fall2023/ItpgGt2004CommunicationsLabHyperc
 import ItpgGt2004Week12 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week12"
 import ItpgGt2004Week13 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week13"
 import ItpgGt2004Week14 from "./views/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week14"
-// Intro to Computational Media
+// ITPG-GT 2233: Intro to Computational Media
 import ItpgGt2233CourseOverview from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview"
 import ItpgGt2233Week1 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week1"
 import ItpgGt2233Week2 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week2"
@@ -48,7 +48,7 @@ import ItpgGt2233Week11 from "./views/Fall2023/ItpgGt2233IntroToComputationalMed
 import ItpgGt2233Week12 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week12"
 import ItpgGt2233Week13 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week13"
 import ItpgGt2233Week14 from "./views/Fall2023/ItpgGt2233IntroToComputationalMedia/Week14"
-//  Intro to Physical Computing
+// ITPG-GT 2301: Intro to Physical Computing
 import ItpgGt2301CourseOverview from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview"
 import ItpgGt2301Week1 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week1"
 import ItpgGt2301Week2 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week2"
@@ -65,28 +65,30 @@ import ItpgGt2301Week12 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputin
 import ItpgGt2301Week13 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week13"
 import ItpgGt2301Week14 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week14"
 
-//  Electronics For Inventors
+// Spring 2024
+//  ITPG-GT 2036: Electronics For Inventors
 import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 import ItpgGt2036Week1 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
 import ItpgGt2036Week2 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week2.js"
-//  The Nature of Code
+//  ITPG-GT 2480: The Nature of Code
 import ItpgGt2480CourseOverview from "./views/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview.js"
 import ItpgGt2480Week1 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week1.js"
 import ItpgGt2480Week2 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week2.js"
-//  Connected Devices and Networked Interactions
+//  ITPG-GT 2565: Connected Devices and Networked Interactions
 import ItpgGt2565CourseOverview from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview.js"
 import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week1.js"
 import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
-//  Homemade Hardware
+//  ITPG-GT 2767: Homemade Hardware
 import ItpgGt2767CourseOverview from "./views/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview.js"
 import ItpgGt2767Week1 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week1.js"
 import ItpgGt2767Week2 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week2.js"
-//  Into to Curating New Media Art
+//  ITPG-GT 3036: Into to Curating New Media Art
 // import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 // import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
-// Haptics
-// import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
-// import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
+//  ITPG-GT 2457: Haptics
+//  import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
+//  import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
+
 function App() {
   return (
     <Router>
@@ -124,6 +126,7 @@ function AppContent() {
       ItpgGt2767HomemadeHardware: "ITPG-GT 2767 Homemade Hardware",
       ItpgGt3036IntroToCuratingNewMediaArt:
         "ITPG-GT 3036 Intro To Curating New Media Art",
+      ItpgGt2457Haptics: "ITPG-GT 2457 Haptics",
     }
     const blogWeek = {
       CourseOverview: "Course Overview",
@@ -189,6 +192,7 @@ function AppContent() {
               <li>
                 <Link to="/fall-2023">Fall 2023</Link>
                 <ul className="subNav">
+                  {/* ITP-GT 2000: Applications */}
                   {/* <li>
                     <Link to="/fall-2023/itpg-gt-2000-applications">
                       ITPG-GT 2000: Applications
@@ -201,7 +205,7 @@ function AppContent() {
                       </li>
                       <p>—</p>
                     </ul>
-                  </li> */}
+                  </li>  */}
                   {/* ITPG-GT 2004: Communications Lab Hypercinema */}
                   <li>
                     <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
@@ -282,7 +286,7 @@ function AppContent() {
                     </ul>
                   </li>
                   <li>
-                    {/* ITPG-GT 2233: Intro to Computational Media   */}
+                    {/* ITPG-GT 2233: Intro to Computational Media */}
                     <Link to="/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview">
                       ITPG-GT 2233: Intro to Computational Media
                     </Link>
@@ -361,7 +365,7 @@ function AppContent() {
                     </ul>
                   </li>
                   <li>
-                    {/* ITPG-GT 2301: Intro to Physical Computing   */}
+                    {/* ITPG-GT 2301: Intro to Physical Computing */}
                     <Link to="/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview">
                       ITPG-GT 2301: Intro to Physical Computing
                     </Link>
@@ -447,6 +451,7 @@ function AppContent() {
               <li>
                 <Link to="/spring-2024">Spring 2024</Link>
                 <ul className="subNav">
+                  {/* ITPG-GT 2036: Electronics For Inventors */}
                   <li>
                     <Link to="/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview">
                       ITPG-GT 2036: Electronics For Inventors
@@ -465,6 +470,7 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li>
+                  {/* ITPG-GT 2480: The Nature Of Code */}
                   <li>
                     <Link to="/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview">
                       ITPG-GT 2480: The Nature Of Code
@@ -483,6 +489,7 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li>
+                  {/* ITPG-GT 2565: Connected Devices And Networked Interaction */}
                   <li>
                     <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview">
                       ITPG-GT 2565: Connected Devices And Networked Interaction
@@ -501,6 +508,7 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li>
+                  {/* ITPG-GT 2767: Homemade Hardware */}
                   <li>
                     <Link to="/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview">
                       ITPG-GT 2767: Homemade Hardware
@@ -519,9 +527,24 @@ function AppContent() {
                       <p>—</p>
                     </ul>
                   </li>
+                  {/* ITPG-GT 3036: Intro To Curating New Media Art */}
                   {/* <li>
                     <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
                       ITPG-GT 3036: Intro To Curating New Media Art
+                    </Link>
+                    <ul className="classNav">
+                      <li>
+                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1">
+                          Week 1
+                        </Link>
+                      </li>
+                      <p>—</p>
+                    </ul>
+                  </li> */}
+                  {/* ITPG-GT 2457: Haptics */}
+                  {/* <li>
+                    <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
+                      ITPG-GT 3036: Haptics
                     </Link>
                     <ul className="classNav">
                       <li>
@@ -575,12 +598,13 @@ function AppContent() {
         )}
       </nav>
 
+      {/* Routes */}
       <Routes>
-        {/* General Navigation */}
+        /* General Navigation */
         <Route path="/" element={<Home />} />
-        {/* Fall 2023 */}
+        /* Fall 2023 */
         <Route path="/fall-2023" element={<Fall2023 />} />
-        {/* Applications */}
+        /* ITPG-GT 2000: Application */
         {/* <Route
           path="/fall-2023/itpg-gt-2000-applications"
           element={<ITPG_GT_2000_Applications />}
@@ -589,7 +613,7 @@ function AppContent() {
           path="/fall-2023/itpg-gt-2000-applications/lab-one"
           element={<LabOne_ITPG_GT_2000 />}
         /> */}
-        {/* Communications Lab Hypercinema */}
+        /* ITPG-GT 2004: Communications Lab Hypercinema */
         <Route
           path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview"
           element={<ItpgGt2004CourseOverview />}
@@ -650,7 +674,7 @@ function AppContent() {
           path="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week14"
           element={<ItpgGt2004Week14 />}
         />
-        {/* Intro to Computational Media */}
+        /* ITPG-GT 2233: Intro to Computational Media */
         <Route
           path="/Fall2023/ItpgGt2233IntroToComputationalMedia/CourseOverview"
           element={<ItpgGt2233CourseOverview />}
@@ -711,7 +735,7 @@ function AppContent() {
           path="/Fall2023/ItpgGt2233IntroToComputationalMedia/Week14"
           element={<ItpgGt2233Week14 />}
         />
-        {/* Intro to Physical Computing */}
+        /* ITPG-GT 2301: Intro to Physical Computing*/
         <Route
           path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/CourseOverview"
           element={<ItpgGt2301CourseOverview />}
@@ -772,7 +796,7 @@ function AppContent() {
           path="/Fall2023/ItpgGt2301IntroToPhysicalComputing/Week14"
           element={<ItpgGt2301Week14 />}
         />
-        {/* Electronics For Inventors */}
+        /* Spring 2024 */ /* ITPG-GT 2036: Electronics For Inventors */
         <Route
           path="/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview"
           element={<ItpgGt2036CourseOverview />}
@@ -785,7 +809,7 @@ function AppContent() {
           path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week2"
           element={<ItpgGt2036Week2 />}
         />
-        {/* The Nature Of Code */}
+        /* ITPG-GT 2480: The Nature Of Code */
         <Route
           path="/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview"
           element={<ItpgGt2480CourseOverview />}
@@ -798,7 +822,7 @@ function AppContent() {
           path="/Spring2024/ItpgGt2480TheNatureOfCode/Week2"
           element={<ItpgGt2480Week2 />}
         />
-        {/* Connected Devices and Networked Interaction */}
+        /* ITPG-GT 2565: Connected Devices and Networked Interaction */
         <Route
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview"
           element={<ItpgGt2565CourseOverview />}
@@ -811,7 +835,7 @@ function AppContent() {
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2"
           element={<ItpgGt2565Week2 />}
         />
-        {/* Homemade Hardware */}
+        /* ITPG-GT 2767: Homemade Hardware */
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview"
           element={<ItpgGt2767CourseOverview />}
