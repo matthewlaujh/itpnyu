@@ -78,6 +78,7 @@ import ItpgGt2480Week2 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week2.
 import ItpgGt2565CourseOverview from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview.js"
 import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week1.js"
 import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
+import ItpgGt2565Week3 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3.js"
 //  ITPG-GT 2767: Homemade Hardware
 import ItpgGt2767CourseOverview from "./views/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview.js"
 import ItpgGt2767Week1 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week1.js"
@@ -505,6 +506,11 @@ function AppContent() {
                           Week 2
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3">
+                          Week 3
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
@@ -834,6 +840,10 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2"
           element={<ItpgGt2565Week2 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3"
+          element={<ItpgGt2565Week3 />}
         />
         /* ITPG-GT 2767: Homemade Hardware */
         <Route
