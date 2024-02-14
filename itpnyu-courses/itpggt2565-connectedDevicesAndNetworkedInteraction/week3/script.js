@@ -1,55 +1,36 @@
 const inputText = document.getElementById("inputText")
 const displayText = document.getElementById("displayText")
+const displayTextContainer = document.getElementById("displayTextContainer")
 displayText.contentEditable = "true"
 function updateText() {
   displayText.textContent = inputText.value
 }
 inputText.addEventListener("input", updateText)
 
-window.addEventListener("mousemove", function (event) {
-  const mouseX = event.clientX
-  const mouseY = event.clientY
-
-  const fontWeight = mapRange(mouseY, 0, window.innerHeight, 200, 700)
-
-  const fontItalic = mapRange(mouseX, 0, window.innerWidth, 0, 12)
-
-  displayText.style.fontVariationSettings = `'wght' ${fontWeight}, 'ital' ${fontItalic}`
-  displayText.style.transition = "font-variation-settings 0.3s ease"
-})
-
-function mapRange(value, inMin, inMax, outMin, outMax) {
-  return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
-}
-
-document.addEventListener("keydown", function (event) {
-  if (event.shiftKey) {
-    displayText.style.fontFeatureSettings = `"calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "ss05" 1, "ss06" 1, "aalt" 1, "ss07" 1, "case" 1, "dlig" 1, "dnom" 1, "frac" 1, "lnum" 1, "numr" 1, "onum" 1, "ordn" 1, "pnum" 1, "salt" 1, "sinf" 1, "subs" 1, "sups" 1, "tnum" 1, "zero" 1, "locl" 1`
-  }
-})
-document.addEventListener("keyup", function (event) {
-  if (event.key === "Shift") {
-    displayText.style.fontFeatureSettings = "normal"
-  }
-})
-
 const ws = new WebSocket("ws://localhost:1880/messages")
+const wsGyroData = new WebSocket("ws://localhost:1880/gyroData")
+const wsAccelData = new WebSocket("ws://localhost:1880/accelData")
+
 ws.addEventListener("open", handleSocketOpen)
-ws.addEventListener("message", handleSocketMessage)
-ws.addEventListener("close", handleSocketClose)
+wsGyroData.addEventListener("message", handleSocketGyroData)
+wsAccelData.addEventListener("message", handleSocketAccelData)
 
 function handleSocketOpen(event) {
   ws.send("Hello Server!")
-  document.body.style.backgroundColor = "lightgreen"
+  displayText.innerHTML = "Hello World!<br>Type Something!"
 }
 
-function handleSocketMessage(event) {
-  console.log("Message from server", event.data)
-  document.body.style.backgroundColor = "yellow"
-  document.getElementById("message").innerHTML = event.data
+function handleSocketGyroData(event) {
+  const gyroDataString = event.data.trim()
+  const [Gx, Gy, Gz] = gyroDataString.split(/\s+/).map(parseFloat)
+  displayText.style.transform = `translate(${Gx}px, ${Gy}px)`
 }
 
-function handleSocketClose(event) {
-  console.log("Connection closed")
-  document.body.style.backgroundColor = "black"
+function handleSocketAccelData(event) {
+  displayTextContainer.style.backgroundColor = "black"
+  displayText.style.color = "white"
+  setTimeout(() => {
+    displayTextContainer.style.backgroundColor = ""
+    displayText.style.color = ""
+  }, 1000)
 }

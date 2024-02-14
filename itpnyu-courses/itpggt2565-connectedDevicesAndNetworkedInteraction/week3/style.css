@@ -12,6 +12,7 @@
   font-family: "Favorit Variable";
   font-weight: 400;
   line-height: normal;
+  overflow: hidden;
 }
 
 #home {
@@ -29,7 +30,11 @@
 #inputText {
   background-color: rgb(215, 215, 215);
   border: none;
-  /* border-bottom: 1px dotted rgb(85, 90, 110); */
+}
+
+#displayTextContainer {
+  width: 100vw;
+  height: 75vh;
 }
 
 #displayText {
@@ -37,9 +42,10 @@
   text-align: center;
   padding: 20vh 10vw;
   word-wrap: break-word;
+  transition: transform 0.3s ease;
 }
 
 #footer {
-  position: fixed;
+  position: absolute;
   bottom: 2vw;
 }
