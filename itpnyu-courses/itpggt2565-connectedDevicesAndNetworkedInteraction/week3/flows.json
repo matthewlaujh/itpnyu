@@ -1,0 +1,205 @@
+[
+    {
+        "id": "10cbe78670146e0e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3a01ef8537cf1d15",
+        "type": "udp in",
+        "z": "10cbe78670146e0e",
+        "name": "gyrodataIn",
+        "iface": "",
+        "port": "1834",
+        "ipv": "udp6",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "c248cb44f9d2fa9f",
+                "1f5db23482bfbad8"
+            ]
+        ]
+    },
+    {
+        "id": "ed126be6f91c4f72",
+        "type": "websocket out",
+        "z": "10cbe78670146e0e",
+        "name": "[ws] messages",
+        "server": "804a11f491d4814c",
+        "client": "",
+        "x": 820,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8edcf24143d4b42a",
+        "type": "file",
+        "z": "10cbe78670146e0e",
+        "name": "gyroDataLog",
+        "filename": "/Users/matthewlaujh/Desktop/desktop/itpnyu/itpnyu/itpnyu-courses/itpggt2565-connectedDevicesAndNetworkedInteraction/week3/gyroDataLog",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 810,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93e1eed01f1819aa",
+        "type": "debug",
+        "z": "10cbe78670146e0e",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c248cb44f9d2fa9f",
+        "type": "function",
+        "z": "10cbe78670146e0e",
+        "name": "splitData",
+        "func": "// Split the incoming UDP data into gyrometer and accelerometer data\nconst dataParts = msg.payload.trim().split(\"\\t\");\n\n// Extract gyrometer and accelerometer data\nconst gyroData = dataParts.slice(0, 3).join(\" \");\nconst accelData = dataParts.slice(3).join(\" \");\n\n// Send data to respective websockets\nreturn [\n    { payload: gyroData },\n    { payload: accelData }\n];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "0b7341951c9ad4f3",
+                "8edcf24143d4b42a",
+                "93e1eed01f1819aa"
+            ],
+            [
+                "ba4429c06e13a2e9",
+                "1e8ff422f4ac16cf",
+                "610eb8ab4db4ec59"
+            ]
+        ]
+    },
+    {
+        "id": "0b7341951c9ad4f3",
+        "type": "websocket out",
+        "z": "10cbe78670146e0e",
+        "name": "[ws] gyroData",
+        "server": "5d1d45a3090b6544",
+        "client": "",
+        "x": 820,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1f5db23482bfbad8",
+        "type": "websocket out",
+        "z": "10cbe78670146e0e",
+        "name": "[ws] messages",
+        "server": "55da9f9547e99a31",
+        "client": "",
+        "x": 460,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "39d4213dc0b79c8d",
+        "type": "websocket out",
+        "z": "10cbe78670146e0e",
+        "name": "[ws] accelData",
+        "server": "804a11f491d4814c",
+        "client": "",
+        "x": 1181,
+        "y": 659,
+        "wires": []
+    },
+    {
+        "id": "ba4429c06e13a2e9",
+        "type": "file",
+        "z": "10cbe78670146e0e",
+        "name": "accelDataLog",
+        "filename": "/Users/matthewlaujh/Desktop/desktop/itpnyu/itpnyu/itpnyu-courses/itpggt2565-connectedDevicesAndNetworkedInteraction/week3/accelDataLog",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 820,
+        "y": 719,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e8ff422f4ac16cf",
+        "type": "debug",
+        "z": "10cbe78670146e0e",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "610eb8ab4db4ec59",
+        "type": "function",
+        "z": "10cbe78670146e0e",
+        "name": "accelDataDetectFastMovement",
+        "func": "const thresholdX = 2.0;\nconst thresholdY = 2.0;\nconst thresholdZ = 2.0;\n\nconst data = msg.payload.split(\"\\t\");\n\nconst x = parseFloat(data[0]);\nconst y = parseFloat(data[1]);\nconst z = parseFloat(data[2]);\n\nvar msg = {payload:\"\"}\n\nif (Math.abs(x) > thresholdX || Math.abs(y) > thresholdY || Math.abs(z) > thresholdZ){\n    msg.payload = { x: x, y: y, z: z };\n    return [[msg]];\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 660,
+        "wires": [
+            [
+                "39d4213dc0b79c8d"
+            ]
+        ]
+    },
+    {
+        "id": "804a11f491d4814c",
+        "type": "websocket-listener",
+        "path": "/accelData",
+        "wholemsg": "false"
+    },
+    {
+        "id": "5d1d45a3090b6544",
+        "type": "websocket-listener",
+        "path": "gyroData",
+        "wholemsg": "false"
+    },
+    {
+        "id": "55da9f9547e99a31",
+        "type": "websocket-listener",
+        "path": "/messages",
+        "wholemsg": "false"
+    }
+]
