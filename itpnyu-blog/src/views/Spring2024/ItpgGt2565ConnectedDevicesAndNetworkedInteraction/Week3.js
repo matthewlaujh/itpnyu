@@ -226,11 +226,11 @@ function handleSocketAccelData(event) {
 
 WiFiUDP udpClient;
 
-const char WIFI_SSID[] = "Verizon_LF6QM4";   //WiFi network name goes here
-const char WIFI_PASS[] = "nearly3-vat-few";  //WiFi password goes here
+const char WIFI_SSID[] = "";   //WiFi network name goes here
+const char WIFI_PASS[] = "";  //WiFi password goes here
 
-const char server[] = "192.168.1.166";  //local IP address of receiver device goes here
-const int port = 1834;                  //desired port # goes here. Make sure the receiver is listening on the same port!
+const char server[] = "";  //local IP address of receiver device goes here
+const int port = ;                  //desired port # goes here. Make sure the receiver is listening on the same port!
 
 float Gx, Gy, Gz;
 float Ax, Ay, Az;
