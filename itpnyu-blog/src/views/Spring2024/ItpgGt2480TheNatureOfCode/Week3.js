@@ -63,7 +63,8 @@ const BlogPost = () => {
         />
 
         <Subheader>
-          Mock up of motion blur effect I wanted to try to achieve
+          Mock up of motion blur effect I wanted to try to achieve (ok maybe not
+          quite this, but it should a softer streaky kind of look)
         </Subheader>
         <Images
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2480-natureofcode-images/itpnyu-blog-spring2024-itpg-gt2480-natureofcode-w3-motionBlur.png"
