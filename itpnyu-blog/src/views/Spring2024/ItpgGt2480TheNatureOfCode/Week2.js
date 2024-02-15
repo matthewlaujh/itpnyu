@@ -17,7 +17,7 @@ const BlogPost = () => {
   return (
     <Container>
       <div>
-        <Header>Week 1</Header>
+        <Header>Week 2</Header>
         <ExternalText>
           Find any sketch you previously created in p5.js with separate x,y
           variables for elements on the sketch. Can you rewrite the sketch with
