@@ -62,6 +62,14 @@ const BlogPost = () => {
           height="50vh"
         />
 
+        <Subheader>
+          Mock up of motion blur effect I wanted to try to achieve
+        </Subheader>
+        <Images
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2480-natureofcode-images/itpnyu-blog-spring2024-itpg-gt2480-natureofcode-w3-motionBlur.png"
+          alt=" "
+        />
+
         <Subheader>p5.js code</Subheader>
         <CodeSnippets
           language="javascript"
