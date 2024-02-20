@@ -70,20 +70,64 @@ import ItpgGt2301Week14 from "./views/Fall2023/ItpgGt2301IntroToPhysicalComputin
 import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 import ItpgGt2036Week1 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
 import ItpgGt2036Week2 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week2.js"
+import ItpgGt2036Week3 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week3.js"
+import ItpgGt2036Week4 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week4.js"
+import ItpgGt2036Week5 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week5.js"
+import ItpgGt2036Week6 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week6.js"
+import ItpgGt2036Week7 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week7.js"
+import ItpgGt2036Week8 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week8.js"
+import ItpgGt2036Week9 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week9.js"
+import ItpgGt2036Week10 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week10.js"
+import ItpgGt2036Week11 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week11.js"
+import ItpgGt2036Week12 from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/Week12.js"
 //  ITPG-GT 2480: The Nature of Code
 import ItpgGt2480CourseOverview from "./views/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview.js"
 import ItpgGt2480Week1 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week1.js"
 import ItpgGt2480Week2 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week2.js"
 import ItpgGt2480Week3 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week3.js"
+import ItpgGt2480Week4 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week4.js"
+import ItpgGt2480Week5 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week5.js"
+import ItpgGt2480Week6 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week6.js"
+import ItpgGt2480Week7 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week7.js"
+import ItpgGt2480Week8 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week8.js"
+import ItpgGt2480Week9 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week9.js"
+import ItpgGt2480Week10 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week10.js"
+import ItpgGt2480Week11 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week11.js"
+import ItpgGt2480Week12 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week12.js"
+import ItpgGt2480Week13 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week13.js"
+import ItpgGt2480Week14 from "./views/Spring2024/ItpgGt2480TheNatureOfCode/Week14.js"
 //  ITPG-GT 2565: Connected Devices and Networked Interactions
 import ItpgGt2565CourseOverview from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/CourseOverview.js"
 import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week1.js"
 import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
 import ItpgGt2565Week3 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3.js"
+import ItpgGt2565Week4 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4.js"
+import ItpgGt2565Week5 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week5.js"
+import ItpgGt2565Week6 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week6.js"
+import ItpgGt2565Week7 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week7.js"
+import ItpgGt2565Week8 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week8.js"
+import ItpgGt2565Week9 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9.js"
+import ItpgGt2565Week10 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week10.js"
+import ItpgGt2565Week11 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week11.js"
+import ItpgGt2565Week12 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week12.js"
+import ItpgGt2565Week13 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week13.js"
+import ItpgGt2565Week14 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week14.js"
 //  ITPG-GT 2767: Homemade Hardware
 import ItpgGt2767CourseOverview from "./views/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview.js"
 import ItpgGt2767Week1 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week1.js"
 import ItpgGt2767Week2 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week2.js"
+import ItpgGt2767Week3 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week3.js"
+import ItpgGt2767Week4 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week4.js"
+import ItpgGt2767Week5 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week5.js"
+import ItpgGt2767Week6 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week6.js"
+import ItpgGt2767Week7 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week7.js"
+import ItpgGt2767Week8 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week8.js"
+import ItpgGt2767Week9 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week9.js"
+import ItpgGt2767Week10 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week10.js"
+import ItpgGt2767Week11 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week11.js"
+import ItpgGt2767Week12 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week12.js"
+import ItpgGt2767Week13 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week13.js"
+import ItpgGt2767Week14 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week14.js"
 //  ITPG-GT 3036: Into to Curating New Media Art
 // import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 // import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
@@ -459,7 +503,7 @@ function AppContent() {
                       ITPG-GT 2036: Electronics For Inventors
                     </Link>
                     <ul className="classNav">
-                      <li>
+                      {/* <li>
                         <Link to="/Spring2024/ItpgGt2036ElectronicsForInventors/Week1">
                           Week 1
                         </Link>
@@ -468,7 +512,7 @@ function AppContent() {
                         <Link to="/Spring2024/ItpgGt2036ElectronicsForInventors/Week2">
                           Week 2
                         </Link>
-                      </li>
+                      </li> */}
                       <p>—</p>
                     </ul>
                   </li>
@@ -515,6 +559,11 @@ function AppContent() {
                       <li>
                         <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3">
                           Week 3
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4">
+                          Week 4
                         </Link>
                       </li>
                       <p>—</p>
@@ -821,6 +870,46 @@ function AppContent() {
           path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week2"
           element={<ItpgGt2036Week2 />}
         />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week3"
+          element={<ItpgGt2036Week3 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week4"
+          element={<ItpgGt2036Week4 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week5"
+          element={<ItpgGt2036Week5 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week6"
+          element={<ItpgGt2036Week6 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week7"
+          element={<ItpgGt2036Week7 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week8"
+          element={<ItpgGt2036Week8 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week9"
+          element={<ItpgGt2036Week9 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week10"
+          element={<ItpgGt2036Week10 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week11"
+          element={<ItpgGt2036Week11 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2036ElectronicsForInventors/Week12"
+          element={<ItpgGt2036Week12 />}
+        />
         /* ITPG-GT 2480: The Nature Of Code */
         <Route
           path="/Spring2024/ItpgGt2480TheNatureOfCode/CourseOverview"
@@ -837,6 +926,50 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2480TheNatureOfCode/Week3"
           element={<ItpgGt2480Week3 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week4"
+          element={<ItpgGt2480Week4 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week5"
+          element={<ItpgGt2480Week5 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week6"
+          element={<ItpgGt2480Week6 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week7"
+          element={<ItpgGt2480Week7 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week8"
+          element={<ItpgGt2480Week8 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week9"
+          element={<ItpgGt2480Week9 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week10"
+          element={<ItpgGt2480Week10 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week11"
+          element={<ItpgGt2480Week11 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week12"
+          element={<ItpgGt2480Week12 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week13"
+          element={<ItpgGt2480Week13 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2480TheNatureOfCode/Week14"
+          element={<ItpgGt2480Week14 />}
         />
         /* ITPG-GT 2565: Connected Devices and Networked Interaction */
         <Route
@@ -855,6 +988,50 @@ function AppContent() {
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3"
           element={<ItpgGt2565Week3 />}
         />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4"
+          element={<ItpgGt2565Week4 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week5"
+          element={<ItpgGt2565Week5 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week6"
+          element={<ItpgGt2565Week6 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week7"
+          element={<ItpgGt2565Week7 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week8"
+          element={<ItpgGt2565Week8 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9"
+          element={<ItpgGt2565Week9 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week10"
+          element={<ItpgGt2565Week10 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week11"
+          element={<ItpgGt2565Week11 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week12"
+          element={<ItpgGt2565Week12 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week13"
+          element={<ItpgGt2565Week13 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week14"
+          element={<ItpgGt2565Week14 />}
+        />
         /* ITPG-GT 2767: Homemade Hardware */
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/CourseOverview"
@@ -867,6 +1044,54 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/Week2"
           element={<ItpgGt2767Week2 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week3"
+          element={<ItpgGt2767Week3 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week4"
+          element={<ItpgGt2767Week4 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week5"
+          element={<ItpgGt2767Week5 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week6"
+          element={<ItpgGt2767Week6 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week7"
+          element={<ItpgGt2767Week7 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week8"
+          element={<ItpgGt2767Week8 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week9"
+          element={<ItpgGt2767Week9 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week10"
+          element={<ItpgGt2767Week10 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week11"
+          element={<ItpgGt2767Week11 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week12"
+          element={<ItpgGt2767Week12 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week13"
+          element={<ItpgGt2767Week13 />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2767HomemadeHardware/Week14"
+          element={<ItpgGt2767Week14 />}
         />
       </Routes>
     </div>

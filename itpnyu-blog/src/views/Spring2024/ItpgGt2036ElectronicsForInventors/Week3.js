@@ -17,13 +17,13 @@ const BlogPost = () => {
   return (
     <Container>
       <div>
-        <Header>Week 2</Header>
+        <Header>Week 3</Header>
         <Subheader>
-          RC Time Constant, Semiconductors, Diodes, Transistors, Breadboards and
-          Variable Power Supplies.
+          Integrated Circuits, Oscillators and Timers, 555 Timer IC: Astable
+          Mode, Reading and Designing Schematics and Oscilloscopes 101.{" "}
         </Subheader>
 
-        <Subheader>NPN3904 LED Flasher</Subheader>
+        <Subheader>555 LED Flasher</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer-nodeRedClassifyFastMovementTextAndData.mp4"
           alt="Description of video"
@@ -33,7 +33,7 @@ const BlogPost = () => {
           alt=" "
         />
 
-        <Subheader>NPN3904 Touch Sensor</Subheader>
+        <Subheader>555 LED Breather</Subheader>
         <VideoPlayer
           src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-weekOne-arduinoAccelerometer-nodeRedClassifyFastMovementTextAndData.mp4"
           alt="Description of video"

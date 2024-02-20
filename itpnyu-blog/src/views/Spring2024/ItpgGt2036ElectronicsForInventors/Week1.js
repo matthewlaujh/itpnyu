@@ -14,6 +14,17 @@ import P5Sketch from "../../../components/P5Sketch"
 import ImagesCarousel from "../../../components/ImagesCarousel"
 
 const BlogPost = () => {
-  return <Container></Container>
+  return (
+    <Container>
+      <div>
+        <Header>Week 2</Header>
+        <Subheader>
+          Electricity and Electrons, Power and Energy, AC/DC, Voltage and
+          Current, Series and Parallel, Resistance, Capacitance, Ohms Law, Wires
+          and Cables, Resistors, Capacitors, Safety and Multimeter.
+        </Subheader>
+      </div>
+    </Container>
+  )
 }
 export default BlogPost
