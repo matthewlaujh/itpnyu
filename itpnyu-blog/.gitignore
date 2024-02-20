@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# pulled repos
+/Users/matthewlaujh/Desktop/desktop/itpnyu/itpnyu/itpnyu-courses/itpggt2767-homemadeHardware/courseMaterials
