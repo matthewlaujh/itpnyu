@@ -537,6 +537,11 @@ function AppContent() {
                           Week 3
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2480TheNatureOfCode/Week4">
+                          Week 4
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
