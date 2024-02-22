@@ -17,7 +17,7 @@ const BlogPost = () => {
   return (
     <Container>
       <div>
-        <Header>Week 3</Header>
+        <Header>Week 4</Header>
         <ExternalText>
           The idea for this week is to use trigonometric functions and/or
           oscillating motion in a sketch.
