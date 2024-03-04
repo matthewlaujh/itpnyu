@@ -132,8 +132,8 @@ import ItpgGt2767Week14 from "./views/Spring2024/ItpgGt2767HomemadeHardware/Week
 // import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
 // import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
 //  ITPG-GT 2457: Haptics
-//  import ItpgGt2036CourseOverview from "./views/Spring2024/ItpgGt2036ElectronicsForInventors/CourseOverview.js"
-//  import ItpgGt2036Week1 from "/views/Spring2024/ItpgGt2036ElectronicsForInventors/Week1.js"
+import ItpgGt2457CourseOverview from "./views/Spring2024/ItpgGt2457Haptics/CourseOverview.js"
+import ItpgGt2457LabNotebook from "./views/Spring2024/ItpgGt2457Haptics/LabNotebook.js"
 
 function App() {
   return (
@@ -190,6 +190,7 @@ function AppContent() {
       Week12: "Week 12",
       Week13: "Week 13",
       Week14: "Week 14",
+      LabNotebook: "Lab Notebook",
     }
     let displayPath = parts
       .map((part) => {
@@ -608,19 +609,19 @@ function AppContent() {
                     </ul>
                   </li> */}
                   {/* ITPG-GT 2457: Haptics */}
-                  {/* <li>
-                    <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/CourseOverview">
-                      ITPG-GT 3036: Haptics
+                  <li>
+                    <Link to="/Spring2024/ItpgGt2457Haptics/CourseOverview.js">
+                      ITPG-GT 2457: Haptics
                     </Link>
                     <ul className="classNav">
                       <li>
-                        <Link to="/Fall2023/ItpgGt2004CommunicationsLabHypercinema/Week1">
-                          Week 1
+                        <Link to="/Spring2024/ItpgGt2457Haptics/LabNotebook.js">
+                          Lab Notebook
                         </Link>
                       </li>
                       <p>—</p>
                     </ul>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -1097,6 +1098,15 @@ function AppContent() {
         <Route
           path="/Spring2024/ItpgGt2767HomemadeHardware/Week14"
           element={<ItpgGt2767Week14 />}
+        />
+        /* ITPG-GT 2457: Haptics */
+        <Route
+          path="/Spring2024/ItpgGt2457Haptics/CourseOverview.js"
+          element={<ItpgGt2457CourseOverview />}
+        />
+        <Route
+          path="/Spring2024/ItpgGt2457Haptics/LabNotebook.js"
+          element={<ItpgGt2457LabNotebook />}
         />
       </Routes>
     </div>
