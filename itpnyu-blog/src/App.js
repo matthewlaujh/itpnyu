@@ -102,10 +102,7 @@ import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNet
 import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
 import ItpgGt2565Week3 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3.js"
 import ItpgGt2565Week4 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4.js"
-import ItpgGt2565Week5 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week5.js"
-import ItpgGt2565Week6 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week6.js"
-import ItpgGt2565Week7 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week7.js"
-import ItpgGt2565Week8 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week8.js"
+import ItpgGt2565Week5 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Midterm.js"
 import ItpgGt2565Week9 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9.js"
 import ItpgGt2565Week10 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week10.js"
 import ItpgGt2565Week11 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week11.js"
@@ -191,6 +188,7 @@ function AppContent() {
       Week13: "Week 13",
       Week14: "Week 14",
       LabNotebook: "Lab Notebook",
+      Midterm: "Midterm",
     }
     let displayPath = parts
       .map((part) => {
@@ -570,6 +568,16 @@ function AppContent() {
                       <li>
                         <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4">
                           Week 4
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Midterm">
+                          Week 5-8 Midterm
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9">
+                          Week 9
                         </Link>
                       </li>
                       <p>—</p>
@@ -999,20 +1007,8 @@ function AppContent() {
           element={<ItpgGt2565Week4 />}
         />
         <Route
-          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week5"
-          element={<ItpgGt2565Week5 />}
-        />
-        <Route
-          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week6"
-          element={<ItpgGt2565Week6 />}
-        />
-        <Route
-          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week7"
-          element={<ItpgGt2565Week7 />}
-        />
-        <Route
-          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week8"
-          element={<ItpgGt2565Week8 />}
+          path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Midterm"
+          element={<ItpgGt2565Midterm />}
         />
         <Route
           path="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9"
