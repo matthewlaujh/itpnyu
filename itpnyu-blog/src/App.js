@@ -102,7 +102,7 @@ import ItpgGt2565Week1 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNet
 import ItpgGt2565Week2 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week2.js"
 import ItpgGt2565Week3 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week3.js"
 import ItpgGt2565Week4 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week4.js"
-import ItpgGt2565Week5 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Midterm.js"
+import ItpgGt2565Midterm from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Midterm.js"
 import ItpgGt2565Week9 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week9.js"
 import ItpgGt2565Week10 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week10.js"
 import ItpgGt2565Week11 from "./views/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week11.js"
