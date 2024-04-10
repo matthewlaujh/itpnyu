@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a6ec471d74ee9d29",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "026cbdc09d44d48b",
+        "type": "http in",
+        "z": "a6ec471d74ee9d29",
+        "name": "",
+        "url": "/messages",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 680,
+        "y": 400,
+        "wires": [
+            [
+                "28ccb87faae23b81",
+                "c939b6fe2fcf8f40"
+            ]
+        ]
+    },
+    {
+        "id": "28ccb87faae23b81",
+        "type": "function",
+        "z": "a6ec471d74ee9d29",
+        "name": "Store Message",
+        "func": "flow.set('storedMessage', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "6e991b9766825a3f"
+            ]
+        ]
+    },
+    {
+        "id": "6e991b9766825a3f",
+        "type": "http response",
+        "z": "a6ec471d74ee9d29",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1080,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6eecd05e8d2b3d6d",
+        "type": "http in",
+        "z": "a6ec471d74ee9d29",
+        "name": "",
+        "url": "/fetchMessage",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 680,
+        "y": 500,
+        "wires": [
+            [
+                "512f879a37a11ade",
+                "611237a7def7903f"
+            ]
+        ]
+    },
+    {
+        "id": "512f879a37a11ade",
+        "type": "function",
+        "z": "a6ec471d74ee9d29",
+        "name": "Get Stored Message",
+        "func": "msg.payload = flow.get('storedMessage') || 'No message received yet.';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 500,
+        "wires": [
+            [
+                "2ce220e05bd84da2"
+            ]
+        ]
+    },
+    {
+        "id": "2ce220e05bd84da2",
+        "type": "http response",
+        "z": "a6ec471d74ee9d29",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1080,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c939b6fe2fcf8f40",
+        "type": "debug",
+        "z": "a6ec471d74ee9d29",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "611237a7def7903f",
+        "type": "debug",
+        "z": "a6ec471d74ee9d29",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 660,
+        "wires": []
+    }
+]

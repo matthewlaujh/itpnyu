@@ -17,17 +17,13 @@ const BlogPost = () => {
   return (
     <Container>
       <div>
-        <Header>Week 3</Header>
-        <Subheader>Homework - WebSockets.</Subheader>
+        <Header>Week 11</Header>
+        <Subheader>Homework - HTTP Part 2.</Subheader>
         <ExternalText>
-          Create a webpage with HTML and JavaScript that communicates with a
-          server via WebSocket. The server should receive 2 different data
-          values from an Arduino through a TCP or UDP connection and forward the
-          values through the WebSocket to the webpage. Explain your choice
-          between UDP and TCP! The values should have some visual effect on the
-          webpage. It can be arbitrary! The server should ALSO log the values
-          and corresponding timestamps to a text file. Push your code (Arduino,
-          HTML/JS/CSS AND Node-RED!!!) to a new GitHub repo.
+          Expand your HTTP server to have it log data to a persistent global
+          variable or text file. Use query params to allow multiple devices to
+          post data and keep their data separate from each other, and to allow
+          clients to request information from one specific device.
         </ExternalText>
         <Text>
           Built upon the previous week's assignment, I added a Node-RED server

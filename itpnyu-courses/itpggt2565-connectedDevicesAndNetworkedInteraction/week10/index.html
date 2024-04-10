@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fetch HTTP Example</title>
+  </head>
+  <body>
+    <label> Client ID: <input id="id_input" /> </label>
+    <label> Message: <input id="msg_input" /> </label>
+    <button onClick="postData()">POST Data</button>
+    <br /><br />
+
+    <label> Client ID to get data: <input id="get_id_input" /> </label>
+    <button onClick="getData()">GET Data</button>
+    <br /><br />
+
+    <table>
+      <thead>
+        <th>Data</th>
+        <th>Time sent</th>
+      </thead>
+      <tbody id="table_body"></tbody>
+    </table>
+
+    <script>
+      const serverIP = "143.244.146.147"
+      const port = 1880
+
+      async function postData() {
+        const deviceID = document.getElementById("id_input").value
+        const res = await fetch(
+          `http://${serverIP}:${port}/data?deviceID=${deviceID}`,
+          {
+            method: "POST",
+            body: document.getElementById("msg_input").value,
+          }
+        )
+        const body = await res.text()
+        window.alert(`server responded with: ${body}`)
+      }
+
+      //declare an async function if you're making HTTP requests inside it
+      async function getData() {
+        const deviceID = document.getElementById("get_id_input").value
+        const res = await fetch(
+          `http://${serverIP}:${port}/data?deviceID=${deviceID}`
+        ) //make the request
+        //const body = await res.text() //if expecting a plain text response
+        const body = await res.json()
+        parseData(body)
+      }
+
+      function parseData(json) {
+        document.getElementById("table_body").innerHTML = ""
+        for (const dataPoint of json) {
+          const newRow = document.createElement("tr") //create a new table row
+
+          const dataCell = document.createElement("td") //create a new table cell
+          dataCell.innerHTML = dataPoint.data
+
+          const timeCell = document.createElement("td")
+          timeCell.innerHTML = new Date(dataPoint.timeSent).toString()
+
+          newRow.appendChild(dataCell)
+          newRow.appendChild(timeCell)
+
+          document.getElementById("table_body").appendChild(newRow)
+        }
+      }
+    </script>
+  </body>
+</html>

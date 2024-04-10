@@ -1,0 +1,1 @@
+{"MatthewsArduinoSenderA":[{"timeSent":1712549079087,"data":"AB"},{"timeSent":1712549089877,"data":"ABC"},{"timeSent":1712549120602,"data":"AABBCCCCBBAA"},{"timeSent":1712549149705,"data":"A"},{"timeSent":1712549170186,"data":"ABCCBAABCCBA"}]}
