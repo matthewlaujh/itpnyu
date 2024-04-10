@@ -32,7 +32,10 @@ const BlogPost = () => {
           fetch the data using different endpoints to get from different files,
           with one button pulling from one file and the other from the other.
         </Text>
-        <VideoPlayer src="" alt="Description of video" />
+        <VideoPlayer
+          src="https://itpnyublog.blob.core.windows.net/itpnyu-blog-spring2024-itpg-gt2565-connectednetworked-videos/itpg-gt-2565-connectedDevicesAndNetworkedInteraction-Week10.MOV"
+          alt="Description of video"
+        />
         <Subheader>Github.</Subheader>
         <Text>
           <Links to="https://github.com/matthewlaujh/itpnyu/tree/main/itpnyu-courses/itpggt2565-connectedDevicesAndNetworkedInteraction/week10">
