@@ -580,6 +580,11 @@ function AppContent() {
                           Week 9
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/Spring2024/ItpgGt2565ConnectedDevicesAndNetworkedInteraction/Week10">
+                          Week 10
+                        </Link>
+                      </li>
                       <p>—</p>
                     </ul>
                   </li>
