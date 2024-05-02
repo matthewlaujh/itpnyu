@@ -65,7 +65,9 @@ class Fluid {
     this.density[index] += amount
     this.density[index] = constrain(this.density[index], 0, 255)
     this.hue[index] += addHue
-    this.hue[index] = constrain(this.hue[index], 0, 255)
+    this.hue[index] = constrain(this.hue[index], 0, 360)
+    // FOR DAN - hue going up from something normal-ish behaviour to 360 then staying there here, not moving
+    // console.log(`Set Hue at (${x}, ${y}): ${this.hue[index]}`)
   }
 
   addVelocity(x, y, amountX, amountY) {
