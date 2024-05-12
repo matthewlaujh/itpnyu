@@ -1,38 +1,53 @@
-let fluid
-let dataA = []
+let fluidA, fluidB
+let dataA = [],
+  dataB = []
 let dataLoaded = false
-let currentDataIndex = 0
-let elapsedTime = 0
+let currentIndexA = 0,
+  currentIndexB = 0
+let elapsedTimeA = 0,
+  elapsedTimeB = 0
 
 function setup() {
   createCanvas(600, 600)
   frameRate(22)
-  fluid = new Fluid(0.2, 0, 0.0000001)
+  fluidA = new Fluid(0.2, 0, 0.0000001)
+  fluidB = new Fluid(0.2, 0, 0.0000001)
   //   loadData()
   mockData()
 }
 
 function draw() {
   background(0)
-  //   if (!dataLoaded || currentDataIndex >= dataA.length) {
-  //     return // Skip if data isn't loaded or all entries are processed
+  //   if (!dataLoaded) {
+  //     return // Skip if data isn't loaded
   //   }
-  fluid.step()
-  updateFluidAnimation()
-  fluid.renderD()
+
+  if (currentIndexA < dataA.length && currentIndexB < dataB.length) {
+    fluidA.step()
+    // fluidB.step()  ZZZ]=e
+    updateFluidAnimation(fluidA, dataA, currentIndexA, elapsedTimeA)
+    // updateFluidAnimation(fluidB, dataB, currentIndexB, elapsedTimeB)
+    fluidA.renderD()
+    // fluidB.renderD()
+    currentIndexA++
+    // currentIndexB++
+  } else {
+    currentIndexA = 0
+    currentIndexB = 0
+  }
 }
 
-function updateFluidAnimation() {
-  if (currentDataIndex >= dataA.length) {
+function updateFluidAnimation(fluid, data, currentIndex, elapsedTime) {
+  if (currentIndex >= data.length) {
     return
   }
 
-  let data = dataA[currentDataIndex]
-  let lerpFactor = elapsedTime / data.duration
-  let hue = lerp(data.startingHue, data.endingHue, lerpFactor)
+  let dataItem = data[currentIndex]
+  let lerpFactor = elapsedTime / dataItem.duration
+  let hue = lerp(dataItem.startingHue, dataItem.endingHue, lerpFactor)
 
-  let cx = int((0.5 * width) / SCALE)
-  let cy = int((0.5 * height) / SCALE)
+  let cx = int(((fluid === fluidA ? 0.25 : 0.75) * width) / SCALE)
+  let cy = int(((fluid === fluidA ? 0.25 : 0.75) * height) / SCALE)
   for (let i = -1; i <= 1; i++) {
     for (let j = -1; j <= 1; j++) {
       let angle = noise(frameCount * 0.1) * TWO_PI
@@ -41,22 +56,17 @@ function updateFluidAnimation() {
       let vy = sin(angle) * strength
       let normalizedHue = fluid.normalizeHue(hue)
       fluid.setHue(cx + i, cy + j, hue)
-      // FOR DAN - hue being updated correctly here
-      // console.log(`Hue at (${cx + i}, ${cy + j}): ${normalizedHue}`)
       fluid.addDensity(cx + i, cy + j, random(50, 150), normalizedHue)
       fluid.addVelocity(cx + i, cy + j, vx, vy)
-      // FOR DAN - hue being updated correctly here
-      // console.log(`Hue at (${cx + i}, ${cy + j}): ${normalizedHue}`)
     }
   }
   elapsedTime += deltaTime
-  if (elapsedTime >= data.duration) {
+  if (elapsedTime >= dataItem.duration) {
     elapsedTime = 0
-    currentDataIndex++
   }
-  if (currentDataIndex >= dataA.length) {
-    currentDataIndex = 0
-  }
+  //   if (currentIndexA >= dataItem.length) {
+  //     currentIndexA = 0
+  //   }
 }
 
 function mockData() {
@@ -72,7 +82,7 @@ function mockData() {
   let stringifiedData = '["' + mockData.join('","') + '"]'
   console.log(stringifiedData)
   dataA = parseData(stringifiedData)
-  console.log(dataA)
+  dataB = parseData(stringifiedData)
 }
 
 function loadData() {
@@ -85,7 +95,7 @@ function loadData() {
     false,
     function (response) {
       dataA = parseData(response)
-      console.log(response)
+      //   console.log(response)
       checkDataLoaded()
       //   console.log(dataA)
     },
@@ -125,10 +135,10 @@ function parseData(rawData) {
 
 function checkDataLoaded() {
   // Set dataLoaded to true only if both dataA and dataB are successfully loaded
-  //   if (dataA.length > 0 && dataB.length > 0) {
-  //     dataLoaded = true
-  //   }
-  if (dataA.length > 0) {
+  if (dataA.length > 0 && dataB.length > 0) {
     dataLoaded = true
   }
+  //   if (dataA.length > 0) {
+  //     dataLoaded = true
+  //   }
 }

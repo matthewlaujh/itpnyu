@@ -104,6 +104,7 @@ function advect(b, d, d0, hue, hue0, velocX, velocY, dt) {
       x = ifloat - tmp1
       y = jfloat - tmp2
 
+      // Shape
       if (x < 0.5) x = 0.5
       if (x > Nfloat + 0.5) x = Nfloat + 0.5
       i0 = Math.floor(x)
@@ -113,6 +114,7 @@ function advect(b, d, d0, hue, hue0, velocX, velocY, dt) {
       j0 = Math.floor(y)
       j1 = j0 + 1
 
+      // Direction
       s1 = x - i0
       s0 = 1.0 - s1
       t1 = y - j0
@@ -127,10 +129,9 @@ function advect(b, d, d0, hue, hue0, velocX, velocY, dt) {
       d[IX(i, j)] =
         s0 * (t0 * d0[IX(i0, j0)] + t1 * d0[IX(i0, j1)]) +
         s1 * (t0 * d0[IX(i1, j0)] + t1 * d0[IX(i1, j1)])
-      // FOR DAN - Added Hue here
       hue[IX(i, j)] =
-        s0 * (t0 * hue0[IX(i0, j0)] + t1 * hue0[IX(i0, j1)]) +
-        s1 * (t0 * hue0[IX(i1, j0)] + t1 * hue0[IX(i1, j1)])
+        s1 * (t0 * hue0[IX(i0, j0)] + t1 * hue0[IX(i0, j1)]) +
+        s0 * (t0 * hue0[IX(i1, j0)] + t1 * hue0[IX(i1, j1)])
     }
   }
 }

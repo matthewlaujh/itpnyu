@@ -57,6 +57,7 @@ class Fluid {
 
     project(Vx, Vy, Vx0, Vy0)
     diffuse(0, s, density, diff, dt)
+    diffuse(0, hue0, hue, diff, dt)
     advect(0, density, s, hue, hue0, Vx, Vy, dt)
   }
 
@@ -65,7 +66,7 @@ class Fluid {
     this.density[index] += amount
     this.density[index] = constrain(this.density[index], 0, 255)
     this.hue[index] += addHue
-    this.hue[index] = constrain(this.hue[index], 0, 360)
+    this.hue[index] = constrain(this.hue[index], 0, this.hue[index])
     // FOR DAN - hue going up from something normal-ish behaviour to 360 then staying there here, not moving
     // console.log(`Set Hue at (${x}, ${y}): ${this.hue[index]}`)
   }
